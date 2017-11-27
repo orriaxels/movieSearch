@@ -1,0 +1,5 @@
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.dll
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.pdb
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb

@@ -1,0 +1,12 @@
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch.iOS.exe
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch.iOS.pdb
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch.dll
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch.pdb
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\MovieSearch.iOS.csprojResolveAssemblyReference.cache
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\MovieSearch.iOS.csproj.CoreCompileInputs.cache
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\MovieSearch.iOS.exe
+C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch.iOS\obj\iPhoneSimulator\Debug\MovieSearch.iOS.pdb
