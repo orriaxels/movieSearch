@@ -1,5 +1,16 @@
-C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.dll
-C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.pdb
-C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
-C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
-C:\Users\skorri\Documents\HR\mapp\ms\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb
+C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.dll
+C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.pdb
+C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
+C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
+C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.dll
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.pdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.dll
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.dll
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.xml
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.pdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.xml
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csprojResolveAssemblyReference.cache

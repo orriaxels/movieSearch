@@ -108,6 +108,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "MovieSearch.Android.dll" comes first in this list. */
 		"MovieSearch.Android.dll",
 		"MovieSearch.dll",
+		"DM.MovieApi.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

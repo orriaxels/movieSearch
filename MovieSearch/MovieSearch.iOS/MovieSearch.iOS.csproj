@@ -69,6 +69,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MovieSearch\MovieSearch.csproj">
       <Name>MovieSearch</Name>
+      <Project>{AFDB1797-6B80-45BC-BB3F-E43A54688A39}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +114,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="MovieSearchViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -121,9 +123,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="MovieSearchViewController.cs" />
+    <Compile Include="MovieSearchViewController.designer.cs">
+      <DependentUpon>MovieSearchViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

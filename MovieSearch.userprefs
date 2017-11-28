@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{1F29C19B-E9B1-4EB3-A5CC-90EB0FD341BF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch.iOS/MovieSearchViewController.cs">
+    <Files>
+      <File FileName="MovieSearch/MovieSearch.iOS/MovieSearchViewController.cs" Line="37" Column="64" />
+      <File FileName="MovieSearch/MovieSearch/MovieDbSettings.cs" Line="14" Column="34" />
+      <File FileName="MovieSearch/MovieSearch/MyMovieApi.cs" Line="29" Column="64" />
+      <File FileName="MovieSearch/MovieSearch/Model/MovieDetails.cs" Line="7" Column="41" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="MovieSearch/MovieSearch.iOS/AppDelegate.cs" Line="25" Column="57" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MovieSearch.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C875A972-10AF-4388-8A2D-A18F1B7F0CF2" />
+</Properties>
