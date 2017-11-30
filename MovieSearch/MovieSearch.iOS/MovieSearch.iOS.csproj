@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MovieSearch\MovieSearch.csproj">
@@ -114,7 +115,6 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="MovieSearchViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -124,9 +124,14 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="MovieSearchViewController.cs" />
-    <Compile Include="MovieSearchViewController.designer.cs">
-      <DependentUpon>MovieSearchViewController.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Controllers\MovieListController.cs" />
+    <Compile Include="Controllers\MovieListDataSource.cs" />
+    <Compile Include="Views\MovieCell.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <Import Project="..\..\..\Hrafn\2017-T-488-MAPP\Projects\MovieDownload\MovieDownload.projitems" Label="Shared" Condition="Exists('..\..\..\Hrafn\2017-T-488-MAPP\Projects\MovieDownload\MovieDownload.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

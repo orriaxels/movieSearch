@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using MovieDownload;
 
 namespace MovieSearch.iOS
 {
@@ -18,11 +19,15 @@ namespace MovieSearch.iOS
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			// Override point for customization after application launch.
-			// If not required for your application you can safely delete this method
+            // Override point for customization after application launch.
+            // If not required for your application you can safely delete this method
+
+            IImageStorage storageClient = new StorageClient();
+            ImageDownloader imageDownloader = new ImageDownloader(storageClient);
+
             this.Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            var controller = new MovieSearchViewController(new MyMovieApi());
-            this.Window.RootViewController = controller;
+            var controller = new MovieSearchViewController(new MyMovieApi(), imageDownloader);
+            this.Window.RootViewController = new UINavigationController(controller);
             this.Window.MakeKeyAndVisible();
 
 			return true;

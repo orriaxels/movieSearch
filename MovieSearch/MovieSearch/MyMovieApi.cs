@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Collections.Generic;
-using DM.MovieApi.ApiRequest;
 using DM.MovieApi;
 using DM.MovieApi.MovieDb.Movies;
 using DM.MovieApi.ApiResponse;
 using System.Threading.Tasks;
 using MovieSearch.Model;
-
 
 namespace MovieSearch
 {
@@ -28,20 +26,43 @@ namespace MovieSearch
 
         public async Task<List<MovieDetails>> GetMovieByTitle(string title)
         {
-            Debug.WriteLine("inside api: " + title);
-
             ApiSearchResponse<MovieInfo> response = await _api.SearchByTitleAsync(title);
-
-            //Debug.WriteLine("after await");
 
             List<MovieDetails> moviesResults = new List<MovieDetails>();
 
+
             foreach (MovieInfo info in response.Results)
             {
+                List<string> _actors = new List<string>();
+                ApiQueryResponse<MovieCredit> cast = await _api.GetCreditsAsync(info.Id);
+                MovieCredit actor = cast.Item;
+
+                //if(actor.CastMembers.Count > 0)
+                //{
+                //    for (int i = 0; i < 3; i++)
+                //    {
+                //        if(actor.CastMembers[i] != null)
+                //        {
+                //            _actors.Add(actor.CastMembers[i].Name);    
+                //        }
+                //    }   
+                //}
+
+                if(actor.CastMembers.Count > 3)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        _actors.Add(actor.CastMembers[i].Name);
+                    }    
+                }
+
                 MovieDetails newMovie = new MovieDetails()
                 {
                     Id = info.Id,
-                    title = info.Title
+                    title = info.Title,
+                    imageUrl = info.PosterPath,
+                    ReleaseDate = info.ReleaseDate,
+                    actors = _actors
                 };
 
                 moviesResults.Add(newMovie);
