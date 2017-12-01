@@ -26,23 +26,30 @@ namespace MovieSearch.iOS
             _api = api;
             _imageDownloader = imageDownloader;
             _movieList = new List<MovieDetails>();
-            uiActivityIndicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
+            uiActivityIndicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
+            this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search, 0);
         }
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
-            this.View.BackgroundColor = UIColor.White;
             NavigationItem.Title = "Movie Search";
+            this.NavigationController.NavigationBar.TitleTextAttributes = new UIStringAttributes()
+            {
+                ForegroundColor = UIColor.White
+            };
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(57, 57, 57);
+            this.NavigationController.NavigationBar.TintColor = UIColor.White;
+            this.View.BackgroundColor = UIColor.FromRGB(48, 48, 48);
+
             var promptLabel = PromptLabel();
             var titleField = UiTextField();
             var resultField = ResultLabel();
-            var searchButton = SearchButton(titleField, resultField);
+            var searchButton = SearchButton(titleField);
+            this.uiActivityIndicator.Frame = new CGRect(this.View.Bounds.Width / 2, this.View.Bounds.Height / 2, 0, 0);
 
-            uiActivityIndicator.Frame = new CGRect(this.View.Bounds.Width / 2, this.View.Bounds.Height / 2, 0, 0);
-
-            this.View.AddSubviews(new UIView[] { promptLabel, titleField, resultField, searchButton, uiActivityIndicator });
+            this.View.AddSubviews(new UIView[] { titleField, resultField, searchButton, uiActivityIndicator });
         }
 
         // Helper functions
@@ -51,7 +58,7 @@ namespace MovieSearch.iOS
             var promptLabel = new UILabel()
             {
                 Frame = new CGRect(StartX, StartY, this.View.Bounds.Width - 2 * StartX, Height),
-                Text = "Enter words in movie title:"
+                Text = "Enter words in movie title:",
             };
 
             return promptLabel;
@@ -79,11 +86,15 @@ namespace MovieSearch.iOS
             return nameField;
         }
 
-        private UIButton SearchButton(UITextField titleField, UILabel resultField)
+        private UIButton SearchButton(UITextField titleField)
         {
             var getMovieButton = UIButton.FromType(UIButtonType.RoundedRect);
-            getMovieButton.Frame = new CGRect(StartX, StartY + 2 * Height, this.View.Bounds.Width - 2 * StartX, Height);
+            getMovieButton.Layer.CornerRadius = 7;
+            getMovieButton.Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height);
             getMovieButton.SetTitle("Get movie", UIControlState.Normal);
+            getMovieButton.SetTitleColor(UIColor.White, UIControlState.Normal);
+            getMovieButton.BackgroundColor = UIColor.FromRGB(2,119,189);
+            getMovieButton.Font = UIFont.SystemFontOfSize(18);
 
             getMovieButton.TouchUpInside += async (sender, args) =>
             {
@@ -91,10 +102,8 @@ namespace MovieSearch.iOS
                 titleField.ResignFirstResponder();
                 resultTitle = titleField.Text;
 
-                if (resultTitle != "")
-                {
-                    _movieList = await _api.GetMovieByTitle(resultTitle);
-                }
+                _movieList = await _api.GetMovieByTitle(resultTitle);
+                
 
                 NavigationItem.BackBarButtonItem = new UIBarButtonItem("Movie search", UIBarButtonItemStyle.Plain, null);
                 this.NavigationController.PushViewController(new MovieListController(this._imageDownloader, this._api), true);

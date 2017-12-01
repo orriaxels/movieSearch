@@ -27,9 +27,10 @@ namespace MovieSearch.iOS.Controllers
         {
             base.ViewDidLoad();
             this.Title = "Movie list";
+            this.TableView.RowHeight = 106;
+            this.TableView.SeparatorColor = UIColor.White;
             this.TableView.Source = new MovieListDataSource(this._movieList, _onSelectedMovie);
             GetAllCastMembers(_movieList);
-            //GetMovieDetail(_movieList);
             DownloadPosters(_movieList);
         }
 
@@ -50,10 +51,9 @@ namespace MovieSearch.iOS.Controllers
         {
             foreach(MovieDetails movie in movies)
             {
-                var cast = await _api.GetCreditList(movie.id);
-                movie.actors = cast;
-                this.TableView.ReloadData();
+                await _api.GetCreditList(movie);
             }
+            this.TableView.ReloadData();
         }
     }
 }

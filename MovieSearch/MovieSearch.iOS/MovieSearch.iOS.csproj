@@ -123,6 +123,8 @@
     <Compile Include="Controllers\MovieListDataSource.cs" />
     <Compile Include="Views\MovieCell.cs" />
     <Compile Include="Controllers\MovieDetailController.cs" />
+    <Compile Include="Controllers\TabBarController.cs" />
+    <Compile Include="Controllers\TopTenController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />

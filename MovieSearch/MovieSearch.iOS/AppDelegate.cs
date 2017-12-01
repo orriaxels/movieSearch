@@ -2,6 +2,7 @@
 using UIKit;
 using MovieDownload;
 using MovieSearch.Services;
+using MovieSearch.iOS.Controllers;
 
 namespace MovieSearch.iOS
 {
@@ -25,10 +26,20 @@ namespace MovieSearch.iOS
 
             IImageStorage storageClient = new StorageClient();
             ImageDownloader imageDownloader = new ImageDownloader(storageClient);
+            MovieService movieService = new MovieService();
 
             this.Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            var controller = new MovieSearchViewController( new MovieService(), imageDownloader);
-            this.Window.RootViewController = new UINavigationController(controller);
+            var movieController = new MovieSearchViewController(movieService, imageDownloader);
+            var topTenMoviesController = new TopTenController(movieService, imageDownloader);
+            var navigationController = new UINavigationController(movieController);
+            var navigationTopRatedController = new UINavigationController(topTenMoviesController);
+
+            var tabBarController = new TabBarController()
+            {
+                ViewControllers = new UIViewController[] { navigationController, navigationTopRatedController }
+            };
+
+            this.Window.RootViewController = tabBarController;
             this.Window.MakeKeyAndVisible();
 
 			return true;

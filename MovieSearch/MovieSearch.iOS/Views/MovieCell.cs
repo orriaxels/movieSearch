@@ -20,7 +20,8 @@ namespace MovieSearch.iOS.Views
 
         public MovieCell(NSString cellId) : base(UITableViewCellStyle.Default, cellId)
         {
-            this.SelectionStyle = UITableViewCellSelectionStyle.Gray;
+            this.SelectionStyle = UITableViewCellSelectionStyle.Blue;
+            this.BackgroundColor = UIColor.FromRGB(48, 48, 48);
 
             this._imageView = new UIImageView()
             {
@@ -31,7 +32,7 @@ namespace MovieSearch.iOS.Views
             {
                 Frame = new CGRect(75, 5, this.ContentView.Bounds.Width - 20, 25),
                 Font = UIFont.SystemFontOfSize(16),
-                TextColor = UIColor.FromRGB(0, 0, 0),
+                TextColor = UIColor.White,
                 BackgroundColor = UIColor.Clear
             };
 
@@ -39,7 +40,7 @@ namespace MovieSearch.iOS.Views
             {
                 Frame = new CGRect(75, 23, this.ContentView.Bounds.Width - 20, 25),
                 Font = UIFont.SystemFontOfSize(15),
-                TextColor = UIColor.FromRGB(0, 0, 0),
+                TextColor = UIColor.White,
                 BackgroundColor = UIColor.Clear
             };
 
@@ -47,7 +48,7 @@ namespace MovieSearch.iOS.Views
             {
                 Frame = new CGRect(75, 48, this.ContentView.Bounds.Width - 20, 20),
                 Font = UIFont.SystemFontOfSize(12),
-                TextColor = UIColor.FromRGB(145, 149, 161),
+                TextColor = UIColor.White,
                 BackgroundColor = UIColor.Clear
             };
 
@@ -58,8 +59,6 @@ namespace MovieSearch.iOS.Views
 
         public void UpdateCell(MovieDetails movie)
         {   
-            Console.WriteLine(movie.title + ", poster: " + movie.posterFilePath);
-
             this._imageView.Image = UIImage.FromFile(movie.posterFilePath);
             this._headingLabel.Text = movie.title;
             this._yearLabel.Text = "(" + movie.releaseDate.Year + ")";

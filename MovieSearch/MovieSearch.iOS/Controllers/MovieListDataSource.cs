@@ -18,7 +18,6 @@ namespace MovieSearch.iOS.Controllers
         {
             this._movieList = movieList;
             this._onSelectedMovie = onSelectedMovie;
-
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -31,7 +30,6 @@ namespace MovieSearch.iOS.Controllers
 
             var movie = this._movieList[indexPath.Row];
             cell.UpdateCell(movie);
-            GetHeightForRow(tableView, indexPath);
             return cell;
         }
 

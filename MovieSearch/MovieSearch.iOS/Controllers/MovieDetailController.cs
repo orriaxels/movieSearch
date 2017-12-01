@@ -13,6 +13,7 @@ namespace MovieSearch.iOS.Controllers
     {
         private MovieDetails _movie;
         private MovieService _api;
+
         private const double topPadding = 70;
         private const double headerTitleSize = 30;
         private const double descriptionSize = 200;
@@ -44,7 +45,7 @@ namespace MovieSearch.iOS.Controllers
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            this.View.BackgroundColor = UIColor.White;
+            this.View.BackgroundColor = UIColor.FromRGB(48, 48, 48);
             NavigationItem.Title = "Movie Detail";
 
             _titleHeader = TitleHeader();
@@ -54,7 +55,7 @@ namespace MovieSearch.iOS.Controllers
             _description = DescriptionLabel();
             _imageView = Poster();
             _shadow = ShadowView();
-            _line = CreateLine();
+            _line = CreateLine(120);
 
 
             this.View.AddSubviews(new UIView[] { _titleHeader, this._line, this._imageView, this._description, _runtime, _year, _genres});
@@ -67,6 +68,7 @@ namespace MovieSearch.iOS.Controllers
             {
                 Frame = new CGRect(xPadding, 70, this.View.Bounds.Width - 10, headerTitleSize),
                 Text = this._movie.title,
+                TextColor = UIColor.White,
                 AdjustsFontSizeToFitWidth = true,
                 Font = UIFont.SystemFontOfSize(24),
             };
@@ -80,6 +82,7 @@ namespace MovieSearch.iOS.Controllers
             {
                 Frame = new CGRect(xLocation, 70 + 2 * yPadding, this.View.Bounds.Width - 10, headerTitleSize),
                 Text = text,
+                TextColor = UIColor.White,
                 AdjustsFontSizeToFitWidth = true,
                 Font = UIFont.SystemFontOfSize(10),
             };
@@ -108,6 +111,7 @@ namespace MovieSearch.iOS.Controllers
             {
                 Frame = new CGRect(xLocation, 70 + 2 * yPadding, this.View.Bounds.Width - 10, headerTitleSize),
                 Text = text,
+                TextColor = UIColor.White,
                 AdjustsFontSizeToFitWidth = true,
                 Font = UIFont.SystemFontOfSize(10),
             };
@@ -119,8 +123,9 @@ namespace MovieSearch.iOS.Controllers
         {
             var promptLabel = new UILabel()
             {
-                Frame = new CGRect(xPadding + ImageWidth + xPadding, topPadding + headerTitleSize + yPadding, this.View.Bounds.Width - xPadding - ImageWidth - 2 * xPadding, descriptionSize),
+                Frame = new CGRect(xPadding + ImageWidth + xPadding, topPadding + headerTitleSize + yPadding * 2, this.View.Bounds.Width - xPadding - ImageWidth - 2 * xPadding, descriptionSize),
                 Text = this._movie.description,
+                TextColor = UIColor.White,
                 Lines = 0,
                 Font = UIFont.SystemFontOfSize(12)
             };
@@ -132,7 +137,7 @@ namespace MovieSearch.iOS.Controllers
         {
             var imageView = new UIImageView()
             {
-                Frame = new CGRect(xPadding, topPadding + headerTitleSize + 2 * yPadding , ImageWidth, ImageHeight),
+                Frame = new CGRect(xPadding, topPadding + headerTitleSize + 3 * yPadding , ImageWidth, ImageHeight),
 
             };
 
@@ -167,12 +172,12 @@ namespace MovieSearch.iOS.Controllers
             return sb.ToString();
         }
 
-        private UIView CreateLine()
+        private UIView CreateLine(double yLineLocation)
         {
-            var frame = new CGRect(0, 70, this.View.Bounds.Width, 1);
+            var frame = new CGRect(0, yLineLocation, this.View.Bounds.Width, 1);
             var line = new UIView(frame)
             {
-                BackgroundColor = UIColor.Black
+                BackgroundColor = UIColor.LightGray
             };
 
             return line;
@@ -188,8 +193,6 @@ namespace MovieSearch.iOS.Controllers
             movie.tagLine = detail.tagLine;
             movie.runtime = detail.runtime;
 
-
-            this._genres.Text = "";
             this._runtime.Text = "";
             ViewDidLoad();
         }

@@ -28,69 +28,110 @@ namespace MovieSearch.Services
         {
             ApiSearchResponse<MovieInfo> response = await _api.SearchByTitleAsync(title);
 
-            if(_movies == null)
+            _movies = new List<MovieDetails>();
+
+            if(response.Results == null)
             {
-                _movies.Clear();
-            }
-            else
-            {
-                _movies = new List<MovieDetails>();    
+                return _movies;
             }
 
-            foreach (MovieInfo info in response.Results)
+            if(response.Results != null)
             {
-                _movies.Add(new MovieDetails
+                foreach (MovieInfo info in response.Results)
                 {
-                    id = info.Id,
-                    title = info.Title,
-                    imageUrl = info.PosterPath,
-                    releaseDate = info.ReleaseDate,
-                    voteAverage = info.VoteAverage,
-                    voteCount = info.VoteCount,
-                    posterFilePath = "",
-                    runtime = "",
-                    genres = new List<String>(),
-                    actors = new List<String>()
-                });
+                    _movies.Add(new MovieDetails
+                    {
+                        id = info.Id,
+                        title = info.Title,
+                        imageUrl = info.PosterPath,
+                        releaseDate = info.ReleaseDate,
+                        voteAverage = info.VoteAverage,
+                        voteCount = info.VoteCount,
+                        posterFilePath = "",
+                        runtime = "",
+                        genres = new List<String>(),
+                        actors = new List<String>()
+                    });
+                }
             }
 
             return _movies;
         }
 
-        public async Task<List<String>> GetCreditList(int id)
+        public async Task GetCreditList(MovieDetails movie)
         {
-            ApiQueryResponse<MovieCredit> cast = await _api.GetCreditsAsync(id);
+            ApiQueryResponse<MovieCredit> cast = await _api.GetCreditsAsync(movie.id);
 
-            List<String> actors = new List<String>();
-
-            for (int i = 0; i < cast.Item.CastMembers.Count && i < 3; i++)
+            if(cast.Item != null)
             {
-                actors.Add(cast.Item.CastMembers[i].Name);
-            }    
-
-            return actors;
+                for (int i = 0; i < cast.Item.CastMembers.Count && i < 3; i++)
+                {
+                    movie.actors.Add(cast.Item.CastMembers[i].Name);
+                }    
+            }
         }
 
         public async Task<MovieDetails> GetMovieDetail(int id)
         {
             ApiQueryResponse<Movie> movieInfo = await _api.FindByIdAsync(id);
+            MovieDetails movie = new MovieDetails();
 
-            MovieDetails movie = new MovieDetails()
+            if(movieInfo.Item != null)
             {
-                title = movieInfo.Item.Title,
-                runtime = movieInfo.Item.Runtime.ToString(),
-                description = movieInfo.Item.Overview,
-                tagLine = movieInfo.Item.Tagline,
-                budget = movieInfo.Item.Budget,
-                genres = new List<String>()
-            };
+                movie = new MovieDetails()
+                {
+                    title = movieInfo.Item.Title,
+                    runtime = movieInfo.Item.Runtime.ToString(),
+                    description = movieInfo.Item.Overview,
+                    tagLine = movieInfo.Item.Tagline,
+                    budget = movieInfo.Item.Budget,
+                    genres = new List<String>()
+                };
 
-            for (int i = 0; i < movieInfo.Item.Genres.Count; i++)
-            {
-                movie.genres.Add(movieInfo.Item.Genres[i].ToString());
+                for (int i = 0; i < movieInfo.Item.Genres.Count; i++)
+                {
+                    movie.genres.Add(movieInfo.Item.Genres[i].ToString());
+                }   
             }
 
             return movie;
+        }
+
+        public async Task<List<MovieDetails>> getTopRatedMovies()
+        {
+            ApiSearchResponse<MovieInfo> response = await _api.GetTopRatedAsync();
+            List<MovieDetails> movies = new List<MovieDetails>();
+
+            Debug.WriteLine("Inside get top rated");
+
+            if(response.Results == null)
+            {
+                return movies;
+            }
+
+            if (response.Results != null)
+            {
+                foreach (MovieInfo info in response.Results)
+                {
+                    Debug.WriteLine(info.Title);
+                    movies.Add(new MovieDetails
+                    {
+                        id = info.Id,
+                        title = info.Title,
+                        imageUrl = info.PosterPath,
+                        releaseDate = info.ReleaseDate,
+                        voteAverage = info.VoteAverage,
+                        voteCount = info.VoteCount,
+                        posterFilePath = "",
+                        runtime = "",
+                        genres = new List<String>(),
+                        actors = new List<String>()
+                    });
+                }
+            }
+
+            Debug.WriteLine("Before returning");
+            return movies;
         }
 
         public List<MovieDetails> GetMovies()
