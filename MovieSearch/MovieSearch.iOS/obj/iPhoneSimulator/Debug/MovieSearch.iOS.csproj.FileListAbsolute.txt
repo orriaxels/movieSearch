@@ -10,12 +10,6 @@ C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.iOS/obj
 C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.csproj.CoreCompileInputs.cache
 C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.exe
 C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.pdb
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/ibtool/_BundleResourceWithLogicalName.items
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/actool/_PartialAppManifest.items
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/actool/_BundleResourceWithLogicalName.items
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/optimized/
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.csprojResolveAssemblyReference.cache
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.csproj.CoreCompileInputs.cache
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/bin/iPhoneSimulator/Debug/MovieSearch.iOS.exe
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/bin/iPhoneSimulator/Debug/MovieSearch.iOS.pdb
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/bin/iPhoneSimulator/Debug/MovieSearch.dll
@@ -26,5 +20,11 @@ C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.iOS/obj
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/bin/iPhoneSimulator/Debug/DM.MovieApi.pdb
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/bin/iPhoneSimulator/Debug/DM.MovieApi.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/actool/_PartialAppManifest.items
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/actool/_BundleResourceWithLogicalName.items
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/optimized/
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.csprojResolveAssemblyReference.cache
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.csproj.CoreCompileInputs.cache
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.exe
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.pdb

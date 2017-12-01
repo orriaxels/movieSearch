@@ -10,12 +10,13 @@ namespace MovieSearch.iOS.Views
 {
     public class MovieCell : UITableViewCell
     {
-        private UIImageView _imageView;
         private const double ImageHeight = 96;
         private const double ImageWidth = 64;
-        private UILabel _headingLabel;
-        private UILabel _subheadingLabel;
-        private UILabel _yearLabel;
+
+        private readonly UIImageView _imageView;
+        private readonly UILabel _headingLabel;
+        private readonly UILabel _subheadingLabel;
+        private readonly UILabel _yearLabel;
 
         public MovieCell(NSString cellId) : base(UITableViewCellStyle.Default, cellId)
         {
@@ -55,29 +56,28 @@ namespace MovieSearch.iOS.Views
             this.Accessory = UITableViewCellAccessory.DisclosureIndicator;
         }
 
-        //public void UpdateCell(string title, string releaseDate, List<string> actors, string imageName)
         public void UpdateCell(MovieDetails movie)
-        {
+        {   
+            Console.WriteLine(movie.title + ", poster: " + movie.posterFilePath);
+
             this._imageView.Image = UIImage.FromFile(movie.posterFilePath);
             this._headingLabel.Text = movie.title;
-            this._yearLabel.Text = "(" + movie.ReleaseDate.Year + ")";
+            this._yearLabel.Text = "(" + movie.releaseDate.Year + ")";
             var castMembers = "";
 
-            for (int i = 0; i < movie.actors.Count; i++)
+            if(movie.actors != null)
             {
-                if(i == movie.actors.Count - 1)
+                for (int i = 0; i < movie.actors.Count; i++)
                 {
-                    castMembers += movie.actors[i];
+                    if (i == movie.actors.Count - 1)
+                    {
+                        castMembers += movie.actors[i];
+                    }
+                    else
+                    {
+                        castMembers += movie.actors[i] + ", ";
+                    }
                 }
-                else
-                {
-                    castMembers += movie.actors[i] + ", ";
-                }
-            }
-
-            if(movie.actors.Count == 0)
-            {
-                castMembers = "No cast members in db";
             }
 
             this._subheadingLabel.Text = castMembers;

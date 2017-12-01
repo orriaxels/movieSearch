@@ -1,18 +1,17 @@
 ﻿<Properties StartupConfiguration="{1F29C19B-E9B1-4EB3-A5CC-90EB0FD341BF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch.iOS/Controllers/MovieDetailController.cs">
     <Files>
-      <File FileName="MovieSearch/MovieSearch.iOS/MovieSearchViewController.cs" Line="97" Column="75" />
+      <File FileName="MovieSearch/MovieSearch.iOS/MovieSearchViewController.cs" Line="77" Column="52" />
       <File FileName="MovieSearch/MovieSearch/Classes/Movies.cs" Line="18" Column="1" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListController.cs" Line="23" Column="96" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListDataSource.cs" Line="41" Column="88" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Views/MovieCell.cs" Line="40" Column="15" />
-      <File FileName="MovieSearch/MovieSearch/Model/MovieDetails.cs" Line="12" Column="47" />
-      <File FileName="MovieSearch/MovieSearch/MyMovieApi.cs" Line="8" Column="25" />
-      <File FileName="MovieSearch/MovieSearch.iOS/AppDelegate.cs" Line="29" Column="93" />
-      <File FileName="../Hrafn/2017-T-488-MAPP/Projects/MovieDownload/ImageDownloader.cs" Line="32" Column="48" />
-      <File FileName="../Hrafn/2017-T-488-MAPP/Projects/MovieDownload/StorageClient.cs" Line="18" Column="14" />
-      <File FileName="../Hrafn/2017-T-488-MAPP/Projects/MovieDownload/IImageStorage.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListController.cs" Line="57" Column="10" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieDetailController.cs" Line="62" Column="9" />
+      <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="66" Column="1" />
       <File FileName="MovieSearch/MovieSearch.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="MovieSearch/MovieSearch/Model/MovieDetails.cs" Line="15" Column="51" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Views/MovieCell.cs" Line="80" Column="18" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListDataSource.cs" Line="36" Column="1" />
+      <File FileName="MovieSearch/MovieSearch/Model/SingleMovieDetail.cs" Line="8" Column="9" />
+      <File FileName="MovieSearch/MovieSearch.iOS/AppDelegate.cs" Line="30" Column="98" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MovieSearch.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />

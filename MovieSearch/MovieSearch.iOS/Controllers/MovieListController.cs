@@ -2,33 +2,58 @@
 using System.Collections.Generic;
 using System.Text;
 using MovieSearch.Model;
+using MovieSearch.Services;
+using MovieDownload;
 using UIKit;
+using System.Threading.Tasks;
+using MovieSearch.iOS.Controllers;
 
 namespace MovieSearch.iOS.Controllers
 {
     public class MovieListController : UITableViewController
     {
-        private readonly List<MovieDetails> _movieList;
+        private List<MovieDetails> _movieList;
+        private ImageDownloader _imageDownloader;
+        private MovieService _api;
 
-        public MovieListController(List<MovieDetails> movieList)
+        public MovieListController(ImageDownloader imageDownloader, MovieService api)
         {
-            this._movieList = movieList;
+            this._api = api;
+            this._imageDownloader = imageDownloader;
+            this._movieList = _api.GetMovies();
         }
 
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             this.Title = "Movie list";
-
-            this.TableView.Source = new MovieListDataSource(this._movieList, _onSelectedPerson);
+            this.TableView.Source = new MovieListDataSource(this._movieList, _onSelectedMovie);
+            GetAllCastMembers(_movieList);
+            //GetMovieDetail(_movieList);
+            DownloadPosters(_movieList);
         }
 
-        private void _onSelectedPerson(int row)
+        private void _onSelectedMovie(int row)
         {
-            var okAlertController = UIAlertController.Create("Movie selected", this._movieList[row].title,
-                UIAlertControllerStyle.Alert);
-            okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
-            this.PresentViewController(okAlertController, true, null);
+            MovieDetails movie = this._movieList[row];
+            NavigationItem.BackBarButtonItem = new UIBarButtonItem("Movie list", UIBarButtonItemStyle.Plain, null);
+            this.NavigationController.PushViewController(new MovieDetailController(movie, this._api), true);
+        }
+
+        private async void DownloadPosters(List<MovieDetails> movies)
+        {
+            await _imageDownloader.DownloadImagesInList(movies);
+            this.TableView.ReloadData();
+        }
+
+        private async void GetAllCastMembers(List<MovieDetails> movies)
+        {
+            foreach(MovieDetails movie in movies)
+            {
+                var cast = await _api.GetCreditList(movie.id);
+                movie.actors = cast;
+                this.TableView.ReloadData();
+            }
         }
     }
 }

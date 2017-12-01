@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CoreGraphics;
 using MovieSearch.Model;
+using MovieSearch.Services;
 using MovieSearch.iOS.Controllers;
 using UIKit;
 using MovieDownload;
@@ -11,7 +12,7 @@ namespace MovieSearch.iOS
 {
     public partial class MovieSearchViewController : UIViewController
     {
-        private MyMovieApi _api;
+        private MovieService _api;
         private ImageDownloader _imageDownloader;
         private const double StartX = 20;
         private const double StartY = 80;
@@ -20,7 +21,7 @@ namespace MovieSearch.iOS
         private List<MovieDetails> _movieList;
         private UIActivityIndicatorView uiActivityIndicator;
 
-        public MovieSearchViewController(MyMovieApi api, ImageDownloader imageDownloader)
+        public MovieSearchViewController(MovieService api, ImageDownloader imageDownloader)
         {
             _api = api;
             _imageDownloader = imageDownloader;
@@ -72,7 +73,8 @@ namespace MovieSearch.iOS
             var nameField = new UITextField()
             {
                 Frame = new CGRect(StartX, StartY + Height, this.View.Bounds.Width - 2 * StartX, Height),
-                BorderStyle = UITextBorderStyle.RoundedRect
+                BorderStyle = UITextBorderStyle.RoundedRect,
+                Placeholder = "Enter movie title..."
             };
             return nameField;
         }
@@ -91,25 +93,12 @@ namespace MovieSearch.iOS
 
                 if (resultTitle != "")
                 {
-                    var result = await _api.GetMovieByTitle(resultTitle);
-
-                    foreach (MovieDetails info in result)
-                    {
-                        var localPath = _imageDownloader.LocalPathForFilename(info.imageUrl);
-
-                        await _imageDownloader.DownloadImage(info.imageUrl, localPath, CancellationToken.None);    
-                        info.posterFilePath = localPath;
-                    }
-
-                    _movieList = result;
-                }
-                else
-                {
-                    this._movieList.Clear();
+                    _movieList = await _api.GetMovieByTitle(resultTitle);
                 }
 
                 NavigationItem.BackBarButtonItem = new UIBarButtonItem("Movie search", UIBarButtonItemStyle.Plain, null);
-                this.NavigationController.PushViewController(new MovieListController(this._movieList), true);
+                this.NavigationController.PushViewController(new MovieListController(this._imageDownloader, this._api), true);
+
                 uiActivityIndicator.StopAnimating();
                 resultTitle = "";
                 titleField.Text = "";

@@ -6,11 +6,19 @@ namespace MovieSearch.Model
 {
     public class MovieDetails
     {
-        public int Id { get; set; }
-        public string title { get; set; }
-        public string imageUrl { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public int id { get; set; }
+        public String title { get; set; }
+        public String imageUrl { get; set; }
+        public DateTime releaseDate { get; set; }
         public List<string> actors { get; set; }
-        public string posterFilePath { get; set; }
+        public List<String> genres { get; set; }
+        public String posterFilePath { get; set; }
+        public String description { get; set; }
+        public double voteAverage { get; set; }
+        public int voteCount { get; set; }
+        public String runtime { get; set; }
+        public String tagLine { get; set; }
+        public int budget { get; set; }
+
     }
 }

@@ -68,12 +68,6 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MovieSearch\MovieSearch.csproj">
-      <Name>MovieSearch</Name>
-      <Project>{AFDB1797-6B80-45BC-BB3F-E43A54688A39}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
@@ -107,6 +101,7 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40%403x.png">
       <InProject>false</InProject>
     </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="Resources\ITunesArtwork" />
@@ -127,10 +122,17 @@
     <Compile Include="Controllers\MovieListController.cs" />
     <Compile Include="Controllers\MovieListDataSource.cs" />
     <Compile Include="Views\MovieCell.cs" />
+    <Compile Include="Controllers\MovieDetailController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieSearch\MovieSearch.csproj">
+      <Project>{AFDB1797-6B80-45BC-BB3F-E43A54688A39}</Project>
+      <Name>MovieSearch</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\..\..\Hrafn\2017-T-488-MAPP\Projects\MovieDownload\MovieDownload.projitems" Label="Shared" Condition="Exists('..\..\..\Hrafn\2017-T-488-MAPP\Projects\MovieDownload\MovieDownload.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

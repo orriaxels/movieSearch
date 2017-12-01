@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 using MovieDownload;
+using MovieSearch.Services;
 
 namespace MovieSearch.iOS
 {
@@ -26,7 +27,7 @@ namespace MovieSearch.iOS
             ImageDownloader imageDownloader = new ImageDownloader(storageClient);
 
             this.Window = new UIWindow(UIScreen.MainScreen.Bounds);
-            var controller = new MovieSearchViewController(new MyMovieApi(), imageDownloader);
+            var controller = new MovieSearchViewController( new MovieService(), imageDownloader);
             this.Window.RootViewController = new UINavigationController(controller);
             this.Window.MakeKeyAndVisible();
 

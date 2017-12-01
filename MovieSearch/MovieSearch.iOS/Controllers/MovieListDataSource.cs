@@ -4,6 +4,7 @@ using Foundation;
 using UIKit;
 using MovieSearch.Model;
 using MovieSearch.iOS.Views;
+using MovieSearch.iOS.Controllers;
 
 namespace MovieSearch.iOS.Controllers
 {
@@ -13,23 +14,15 @@ namespace MovieSearch.iOS.Controllers
         public readonly NSString MovieListCellId = new NSString("MovieListCell");
         public readonly Action<int> _onSelectedMovie;
 
-        public MovieListDataSource(List<MovieDetails> movieList, Action<int> onSelectedPerson)
+        public MovieListDataSource(List<MovieDetails> movieList, Action<int> onSelectedMovie)
         {
             this._movieList = movieList;
-            this._onSelectedMovie = onSelectedPerson;
+            this._onSelectedMovie = onSelectedMovie;
+
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            //var cell = tableView.DequeueReusableCell((NSString)this.MovieListCellId);
-            //if (cell == null)
-            //{
-            //    cell = new UITableViewCell(UITableViewCellStyle.Default, this.MovieListCellId);
-            //}
-            //cell.TextLabel.Text = this._movieList[indexPath.Row].title;
-            //UIImage poster  = FromUrl(imagePath + this._movieList[indexPath.Row].imageUrl);
-            //cell.ImageView.Image = poster;
-
             var cell = (MovieCell)tableView.DequeueReusableCell((NSString)this.MovieListCellId);
             if (cell == null)
             {
@@ -39,7 +32,6 @@ namespace MovieSearch.iOS.Controllers
             var movie = this._movieList[indexPath.Row];
             cell.UpdateCell(movie);
             GetHeightForRow(tableView, indexPath);
-
             return cell;
         }
 
@@ -55,7 +47,12 @@ namespace MovieSearch.iOS.Controllers
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
+            //NavigationItem.BackBarButtonItem = new UIBarButtonItem("Movie search", UIBarButtonItemStyle.Plain, null);
+            //this.NavigationController.PushViewController(new MovieListController(this._movieList), true);
+
+
             tableView.DeselectRow(indexPath, true);
+            //var movieDetail = this._movieList[indexPath.Row];
             this._onSelectedMovie(indexPath.Row);
         }
     }
