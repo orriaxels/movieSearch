@@ -33,6 +33,10 @@ namespace MovieSearch.iOS.Controllers
         private UILabel _year;
         private UILabel _genres;
         private UIView _line;
+        private UIView _line2;
+        private UILabel _rating;
+        private UILabel _budget;
+        private UILabel _voteCount;
 
         public MovieDetailController(MovieDetails movie, MovieService api)
         {
@@ -50,15 +54,19 @@ namespace MovieSearch.iOS.Controllers
 
             _titleHeader = TitleHeader();
             _year = DetailBelowHeader(_movie.releaseDate.Year.ToString(), xPadding);
-            _runtime = DetailBelowHeader(_movie.runtime + " min", xPadding * 4);
+            _runtime = DetailBelowHeader(_movie.runtime + " min", xPadding * 5);
             _genres = Genres(xPadding * 10);
             _description = DescriptionLabel();
             _imageView = Poster();
             _shadow = ShadowView();
             _line = CreateLine(120);
+            _line2 = CreateLine(332);
+            _rating = Rating();
+            _budget = Budget();
+            _voteCount = VoteCount();
 
 
-            this.View.AddSubviews(new UIView[] { _titleHeader, this._line, this._imageView, this._description, _runtime, _year, _genres});
+            this.View.AddSubviews(new UIView[] { _titleHeader, this._line, this._line2, this._imageView, this._description, _runtime, _year, _genres, _rating, _budget, _voteCount});
         }
 
         // Helper functions
@@ -80,7 +88,7 @@ namespace MovieSearch.iOS.Controllers
         {
             var promptLabel = new UILabel()
             {
-                Frame = new CGRect(xLocation, 70 + 2 * yPadding, this.View.Bounds.Width - 10, headerTitleSize),
+                Frame = new CGRect(xLocation, 70 + 2 * yPadding + 3, this.View.Bounds.Width - 10, headerTitleSize),
                 Text = text,
                 TextColor = UIColor.White,
                 AdjustsFontSizeToFitWidth = true,
@@ -109,7 +117,7 @@ namespace MovieSearch.iOS.Controllers
 
             var promptLabel = new UILabel()
             {
-                Frame = new CGRect(xLocation, 70 + 2 * yPadding, this.View.Bounds.Width - 10, headerTitleSize),
+                Frame = new CGRect(xLocation, 70 + 2 * yPadding + 3, this.View.Bounds.Width - 10, headerTitleSize),
                 Text = text,
                 TextColor = UIColor.White,
                 AdjustsFontSizeToFitWidth = true,
@@ -119,11 +127,50 @@ namespace MovieSearch.iOS.Controllers
             return promptLabel;
         }
 
+        private UILabel Rating()
+        {
+            var promptLabel = new UILabel()
+            {
+                Frame = new CGRect(2 * xPadding + ImageWidth, topPadding + yPadding * 2 + headerTitleSize + 3, this.View.Bounds.Width - ImageWidth + xPadding * 3, 30),
+                Text = _movie.voteAverage + "/10",
+                TextColor = UIColor.White,
+                Font = UIFont.SystemFontOfSize(16),
+            };
+
+            return promptLabel;
+        }
+
+        private UILabel VoteCount()
+        {
+            var promptLabel = new UILabel()
+            {
+                Frame = new CGRect(2 * xPadding + ImageWidth, topPadding + yPadding * 2 + headerTitleSize + 20, this.View.Bounds.Width - ImageWidth + xPadding * 3, 30),
+                Text = _movie.voteCount.ToString(),
+                TextColor = UIColor.FromRGB(250, 250, 250),
+                Font = UIFont.SystemFontOfSize(12),
+            };
+
+            return promptLabel;
+        }
+
+        private UILabel Budget()
+        {
+            var promptLabel = new UILabel()
+            {
+                Frame = new CGRect(2 * xPadding + ImageWidth, topPadding + yPadding * 2 + headerTitleSize + 45, this.View.Bounds.Width - ImageWidth + xPadding * 3, 30),
+                Text = "$" + _movie.budget,
+                TextColor = UIColor.White,
+                Font = UIFont.SystemFontOfSize(16),
+            };
+
+            return promptLabel;
+        }
+
         private UILabel DescriptionLabel()
         {
             var promptLabel = new UILabel()
             {
-                Frame = new CGRect(xPadding + ImageWidth + xPadding, topPadding + headerTitleSize + yPadding * 2, this.View.Bounds.Width - xPadding - ImageWidth - 2 * xPadding, descriptionSize),
+                Frame = new CGRect(xPadding, topPadding + headerTitleSize + ImageHeight - 5, this.View.Bounds.Width - 2 * xPadding, descriptionSize),
                 Text = this._movie.description,
                 TextColor = UIColor.White,
                 Lines = 0,
@@ -194,6 +241,7 @@ namespace MovieSearch.iOS.Controllers
             movie.runtime = detail.runtime;
 
             this._runtime.Text = "";
+            this._budget.Text = "";
             ViewDidLoad();
         }
 

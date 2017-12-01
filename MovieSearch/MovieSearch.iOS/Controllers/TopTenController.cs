@@ -23,6 +23,7 @@ namespace MovieSearch.iOS.Controllers
             this._imageDownloader = imageDownloader;
             this._movieList = new List<MovieDetails>();
             this.TabBarItem = new UITabBarItem(UITabBarSystemItem.TopRated, 1);
+
         }
 
         public override void ViewDidLoad()
@@ -30,12 +31,19 @@ namespace MovieSearch.iOS.Controllers
             base.ViewDidLoad();
             this.Title = "Top rated movies";
             this.TableView.RowHeight = 106;
-            this.View.BackgroundColor = UIColor.White;
-            uiActivityIndicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.Gray);
+            this.View.BackgroundColor = UIColor.FromRGB(48, 48, 48);
+            this.NavigationController.NavigationBar.TitleTextAttributes = new UIStringAttributes()
+            {
+                ForegroundColor = UIColor.White
+            };
+            this.NavigationController.NavigationBar.BarTintColor = UIColor.FromRGB(57, 57, 57);
+            this.NavigationController.NavigationBar.TintColor = UIColor.White;
+
+            uiActivityIndicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
 
             this.TableView.Source = new MovieListDataSource(this._movieList, _onSelectedMovie);
 
-            this.uiActivityIndicator.Frame = new CGRect(this.View.Bounds.Width / 2, 70, 0, 0);
+            this.uiActivityIndicator.Frame = new CGRect(this.View.Bounds.Width / 2, 55, 0, 0);
             this.View.AddSubviews(new UIView[] { uiActivityIndicator });
 
             //download = true;

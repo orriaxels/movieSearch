@@ -1,24 +1,49 @@
 ﻿<Properties StartupConfiguration="{1F29C19B-E9B1-4EB3-A5CC-90EB0FD341BF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch.iOS/Controllers/TopTenController.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="MovieSearch/MovieSearch.iOS/MovieSearchViewController.cs" Line="44" Column="120" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/TopTenController.cs" Line="74" Column="13" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListController.cs" Line="53" Column="49" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieDetailController.cs" Line="123" Column="113" />
-      <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="18" Column="44" />
+      <File FileName="MovieSearch/MovieSearch.iOS/MovieSearchViewController.cs" Line="93" Column="79" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/TopTenController.cs" Line="46" Column="87" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListController.cs" Line="31" Column="59" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieDetailController.cs" Line="177" Column="51" />
+      <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="102" Column="27" />
       <File FileName="MovieSearch/MovieSearch.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Views/MovieCell.cs" Line="60" Column="13" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListDataSource.cs" Line="34" Column="53" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Views/MovieCell.cs" Line="24" Column="13" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListDataSource.cs" Line="53" Column="64" />
       <File FileName="MovieSearch/MovieSearch/Model/SingleMovieDetail.cs" Line="8" Column="9" />
-      <File FileName="MovieSearch/MovieSearch.iOS/AppDelegate.cs" Line="39" Column="112" />
+      <File FileName="MovieSearch/MovieSearch.iOS/AppDelegate.cs" Line="38" Column="14" />
       <File FileName="../Hrafn/2017-T-488-MAPP/Projects/MovieDownload/ImageDownloader.cs" Line="57" Column="18" />
-      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/TabBarController.cs" Line="14" Column="36" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Controllers/TabBarController.cs" Line="26" Column="68" />
+      <File FileName="MovieSearch/MovieSearch/Model/MovieDetails.cs" Line="18" Column="20" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Info.plist" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Entitlements.plist" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="MovieSearch/MovieSearch.iOS/Main.storyboard" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MovieSearch" expanded="True">
+            <Node name="MovieDownload" expanded="True" />
+            <Node name="MovieSearch" expanded="True">
+              <Node name="Model" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="MovieSearch.iOS" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="Images.xcassets" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.MovieSearch.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

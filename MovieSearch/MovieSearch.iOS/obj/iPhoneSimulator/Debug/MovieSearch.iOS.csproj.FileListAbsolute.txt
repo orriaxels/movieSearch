@@ -28,3 +28,4 @@ C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.iOS/obj
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.csproj.CoreCompileInputs.cache
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.exe
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/MovieSearch.iOS.pdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.1/optimized/movieIcon.png

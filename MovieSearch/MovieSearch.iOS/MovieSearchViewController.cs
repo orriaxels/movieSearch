@@ -26,7 +26,6 @@ namespace MovieSearch.iOS
             _api = api;
             _imageDownloader = imageDownloader;
             _movieList = new List<MovieDetails>();
-            uiActivityIndicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
             this.TabBarItem = new UITabBarItem(UITabBarSystemItem.Search, 0);
         }
 
@@ -47,6 +46,7 @@ namespace MovieSearch.iOS
             var titleField = UiTextField();
             var resultField = ResultLabel();
             var searchButton = SearchButton(titleField);
+            uiActivityIndicator = new UIActivityIndicatorView(UIActivityIndicatorViewStyle.WhiteLarge);
             this.uiActivityIndicator.Frame = new CGRect(this.View.Bounds.Width / 2, this.View.Bounds.Height / 2, 0, 0);
 
             this.View.AddSubviews(new UIView[] { titleField, resultField, searchButton, uiActivityIndicator });
@@ -90,7 +90,7 @@ namespace MovieSearch.iOS
         {
             var getMovieButton = UIButton.FromType(UIButtonType.RoundedRect);
             getMovieButton.Layer.CornerRadius = 7;
-            getMovieButton.Frame = new CGRect(StartX, StartY + 3 * Height, this.View.Bounds.Width - 2 * StartX, Height);
+            getMovieButton.Frame = new CGRect(StartX, StartY + 3 * Height - 30, this.View.Bounds.Width - 2 * StartX, Height);
             getMovieButton.SetTitle("Get movie", UIControlState.Normal);
             getMovieButton.SetTitleColor(UIColor.White, UIControlState.Normal);
             getMovieButton.BackgroundColor = UIColor.FromRGB(2,119,189);
