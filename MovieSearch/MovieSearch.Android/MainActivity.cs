@@ -41,16 +41,15 @@ namespace MovieSearch.Droid
 
             movieSearchbutton.Click += async (object sender, EventArgs e) => 
             {
+                resultText.Text = "";
                 var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
                 manager.HideSoftInputFromWindow(movieSearchText.WindowToken, 0);
                 _movieList = await _api.GetMovieByTitle(movieSearchText.Text);
                 for(int i = 0; i < _movieList.Count; i++)
                 {
                     resultText.Text += _movieList[i].title + "\n";
-                }                
+                }
             };
-
-            Console.WriteLine(_movieList);
 		}
 	}
 }
