@@ -95,9 +95,15 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40%403x.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\24257336_10156420716725931_214879997_n.png" />
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\popcorn.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\24257336_10156420716725931_214879997_n.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\popcorn.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="Resources\ITunesArtwork" />
@@ -122,10 +128,7 @@
     <Compile Include="Controllers\TabBarController.cs" />
     <Compile Include="Controllers\TopTenController.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MovieSearch\MovieSearch.csproj">
       <Project>{AFDB1797-6B80-45BC-BB3F-E43A54688A39}</Project>
@@ -136,5 +139,6 @@
     <BundleResource Include="Resources\movieIcon.png" />
   </ItemGroup>
   <Import Project="..\..\..\Hrafn\2017-T-488-MAPP\Projects\MovieDownload\MovieDownload.projitems" Label="Shared" Condition="Exists('..\..\..\Hrafn\2017-T-488-MAPP\Projects\MovieDownload\MovieDownload.projitems')" />
+  <Import Project="..\MovieDownload\MovieDownload.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

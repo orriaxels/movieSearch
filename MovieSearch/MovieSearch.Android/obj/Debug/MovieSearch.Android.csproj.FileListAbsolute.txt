@@ -44,3 +44,34 @@ C:/Users/skorri/Documents/HR/mapp/ms/movieSearch/MovieSearch/MovieSearch.Android
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xxxhdpi/icon.png
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/R.cs.flag
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/uploadflags.txt
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.pdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\com.companyname.MovieSearch.apk
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\com.companyname.MovieSearch-Signed.apk
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.dll
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.dll
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\Newtonsoft.Json.dll
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.pdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.pdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.xml
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\Newtonsoft.Json.xml
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.csprojResolveAssemblyReference.cache
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.csproj.CoreCompileInputs.cache
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.dll
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.pdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\bin\com.companyname.MovieSearch.apk
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\main.xml
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\strings.xml
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-mdpi\icon.png
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-xxxhdpi\icon.png
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\R.cs.flag
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\uploadflags.txt
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.dll.mdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.dll.mdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll.mdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\DM.MovieApi.dll.mdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\MovieSearch.Android.dll.mdb
+C:\Users\skorri\Documents\HR\mapp\week 1 - ios\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\MovieSearch.dll.mdb
