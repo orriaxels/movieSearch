@@ -25,13 +25,7 @@ namespace MovieSearch.Droid
             _api = new MovieService();
             _movieList = new List<MovieDetails>();
         }
-
-        //public MainActivity(MovieService api)
-        //{
-        //    _api = api;
-        //    _movieList = new List<MovieDetails>();
-        //}
-            
+           
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -50,8 +44,11 @@ namespace MovieSearch.Droid
                 var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
                 manager.HideSoftInputFromWindow(movieSearchText.WindowToken, 0);
                 _movieList = await _api.GetMovieByTitle(movieSearchText.Text);
-                resultText.Text = _movieList[0].title;
-			};
+                for(int i = 0; i < _movieList.Count; i++)
+                {
+                    resultText.Text += _movieList[i].title + "\n";
+                }                
+            };
 
             Console.WriteLine(_movieList);
 		}
