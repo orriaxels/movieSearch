@@ -10,6 +10,7 @@ using MovieSearch.Model;
 using System.Collections.Generic;
 using MovieSearch.Services;
 using Android.Views.InputMethods;
+using System.Threading;
 
 namespace MovieSearch.Droid
 {
@@ -19,6 +20,7 @@ namespace MovieSearch.Droid
         private List<MovieDetails> _movieList;
         private MovieService _api;
 
+        private int progressBarStatus;
 
         public MainActivity()
         {
@@ -41,6 +43,14 @@ namespace MovieSearch.Droid
 
             movieSearchbutton.Click += async (object sender, EventArgs e) => 
             {
+
+                ProgressDialog progressbar = new ProgressDialog(this);
+                progressbar.SetCancelable(true);
+                progressbar.SetMessage("Searching for movies...");
+                progressbar.SetProgressStyle(ProgressDialogStyle.Spinner);
+                progressbar.Show();
+
+
                 resultText.Text = "";
                 var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
                 manager.HideSoftInputFromWindow(movieSearchText.WindowToken, 0);
@@ -49,6 +59,9 @@ namespace MovieSearch.Droid
                 {
                     resultText.Text += _movieList[i].title + "\n";
                 }
+
+                progressbar.SetMessage("Finished!");
+                progressbar.Hide();
             };
 		}
 	}
