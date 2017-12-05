@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{E95A0D9D-DE52-47B1-A565-6062954E1812}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch/Services/MovieService.cs">
     <Files>
-      <File FileName="MovieSearch/MovieSearch.Android/MainActivity.cs" Line="52" Column="15" />
+      <File FileName="MovieSearch/MovieSearch.Android/MainActivity.cs" Line="52" Column="17" />
+      <File FileName="MovieSearch/MovieSearch.Android/Controllers/Spinner/SpinnerLoader.cs" Line="11" Column="52" />
+      <File FileName="MovieSearch/MovieSearch.Android/Properties/AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="58" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.LGH8504b32dbb1" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|ARM" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

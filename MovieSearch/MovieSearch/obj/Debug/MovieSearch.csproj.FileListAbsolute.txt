@@ -31,7 +31,6 @@ C:/Users/skorri/Documents/HR/mapp/week 1 - ios/movieSearch/MovieSearch/MovieSear
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.pdb
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csprojResolveAssemblyReference.cache
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb

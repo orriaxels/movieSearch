@@ -12,6 +12,7 @@ using MovieSearch.Services;
 using Android.Views.InputMethods;
 using System.Threading;
 using Newtonsoft.Json;
+using MovieSearch.Droid.Controllers.Spinner;
 
 namespace MovieSearch.Droid.Activities
 {
@@ -19,6 +20,10 @@ namespace MovieSearch.Droid.Activities
 	public class MainActivity : Activity
     {        
         public static MovieService MovieService { get; set; }
+    {
+        private List<MovieDetails> _movieList;
+        private MovieService _api;
+        private SpinnerLoader _spinner;
            
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -34,20 +39,19 @@ namespace MovieSearch.Droid.Activities
 
             movieSearchbutton.Click += async (object sender, EventArgs e) => 
             {
-                ProgressDialog progressbar = new ProgressDialog(this);
-                progressbar.SetCancelable(true);
-                progressbar.SetMessage("Searching for movies...");
-                progressbar.SetProgressStyle(ProgressDialogStyle.Spinner);
-                progressbar.Show();
-           
+                _spinner = new SpinnerLoader(this);
+                this._spinner.setSpinnerMessage("Searching for movies...");
+                this._spinner.show();
+                
                 var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
                 manager.HideSoftInputFromWindow(movieSearchText.WindowToken, 0);                
                 await MovieService.GetMovieByTitle(movieSearchText.Text);                
                 var intent = new Intent(this, typeof(MovieListActivity));
                 intent.PutExtra("movieList", JsonConvert.SerializeObject(MovieService.GetMovies()));
                 this.StartActivity(intent);
-                progressbar.SetMessage("Finished!");
-                progressbar.Hide();
+
+                this._spinner.setSpinnerMessage("Finished!");
+                this._spinner.hide();
             };
 		}
 	}

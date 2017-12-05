@@ -17,5 +17,9 @@ MonoSymbolArchive=False
 AndroidUseLatestPlatformSdk=True
 TargetFrameworkVersion=v7.1
 AndroidCreatePackagePerAbi=
+<<<<<<< HEAD
 OS=Windows_NT
+=======
+OS=Unix
+>>>>>>> 1ab6da02a03f42b275bbc28e3519c3c9d39a8830
 DesignTimeBuild=

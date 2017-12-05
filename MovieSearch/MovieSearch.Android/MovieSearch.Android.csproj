@@ -66,7 +66,11 @@
     <Compile Include="Activities\MovieListAdapter.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Activities\SplashActivity.cs" />
+=======
+    <Compile Include="Controllers\Spinner\SpinnerLoader.cs" />
+>>>>>>> 1ab6da02a03f42b275bbc28e3519c3c9d39a8830
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -89,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Controllers\Spinner\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\color.xml" />
