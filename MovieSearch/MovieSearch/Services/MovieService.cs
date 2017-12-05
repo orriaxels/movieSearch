@@ -67,7 +67,7 @@ namespace MovieSearch.Services
                 for (int i = 0; i < cast.Item.CastMembers.Count && i < 3; i++)
                 {
                     movie.actors.Add(cast.Item.CastMembers[i].Name);
-                }    
+                }
             }
         }
 

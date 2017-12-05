@@ -10,7 +10,7 @@ namespace MovieSearch.Model
         public String title { get; set; }
         public String imageUrl { get; set; }
         public DateTime releaseDate { get; set; }
-        public List<string> actors { get; set; }
+        public List<String> actors { get; set; }
         public List<String> genres { get; set; }
         public String posterFilePath { get; set; }
         public String description { get; set; }
@@ -19,6 +19,5 @@ namespace MovieSearch.Model
         public String runtime { get; set; }
         public String tagLine { get; set; }
         public int budget { get; set; }
-
     }
 }
