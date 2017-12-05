@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using MovieSearch.Services;
 using Android.Views.InputMethods;
 using System.Threading;
+using MovieSearch.Droid.Controllers.Spinner;
 
 namespace MovieSearch.Droid
 {
@@ -19,8 +20,7 @@ namespace MovieSearch.Droid
     {
         private List<MovieDetails> _movieList;
         private MovieService _api;
-
-        private int progressBarStatus;
+        private SpinnerLoader _spinner;
 
         public MainActivity()
         {
@@ -43,13 +43,9 @@ namespace MovieSearch.Droid
 
             movieSearchbutton.Click += async (object sender, EventArgs e) => 
             {
-
-                ProgressDialog progressbar = new ProgressDialog(this);
-                progressbar.SetCancelable(true);
-                progressbar.SetMessage("Searching for movies...");
-                progressbar.SetProgressStyle(ProgressDialogStyle.Spinner);
-                progressbar.Show();
-
+                _spinner = new SpinnerLoader(this);
+                this._spinner.setSpinnerMessage("Searching for movies...");
+                this._spinner.show();
 
                 resultText.Text = "";
                 var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
@@ -60,8 +56,8 @@ namespace MovieSearch.Droid
                     resultText.Text += _movieList[i].title + "\n";
                 }
 
-                progressbar.SetMessage("Finished!");
-                progressbar.Hide();
+                this._spinner.setSpinnerMessage("Finished!");
+                this._spinner.hide();
             };
 		}
 	}
