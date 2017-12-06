@@ -3,30 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
         <ImageView
             android:layout_width="470dp"
             android:layout_height="630dp"
-            android:background="@drawable/bttdmkgivoi0ffip1spuzi2oqg6"
-            android:id="@+id/imageView1"
-            android:layout_marginLeft="0.0dp"
-            android:layout_marginRight="0.0dp"
+            android:id="@+id/moviePoster"
             android:layout_marginTop="6.0dp"
             android:layout_gravity="center"
             android:outlineProvider="none" />
         <TextView
-            android:text="Movie title"
+            android:text="Year"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="default"
-            android:textSize="22dp"
+            android:textSize="14dp"
             android:textColor="#fffafafa"
-            android:id="@+id/title"
+            android:id="@+id/releaseYear"
+            android:layout_below="@id/moviePoster"
             android:layout_marginLeft="5.0dp"
-            android:layout_marginTop="5.0dp" />
+            android:layout_marginTop="5.0dp"
+            android:layout_marginRight="5dp" />
         <TextView
             android:text="Tagline"
             android:layout_width="match_parent"
@@ -34,8 +33,36 @@
             android:fontFamily="default"
             android:textSize="22dp"
             android:textColor="#fffafafa"
-            android:id="@+id/tagline"
+            android:id="@+id/movieTagline"
             android:layout_marginLeft="5.0dp"
-            android:layout_marginRight="5.0dp" />
-    </LinearLayout>
+            android:layout_marginRight="5.0dp"
+            android:layout_below="@id/releaseYear" />
+        <TextView
+            android:text="Runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="default"
+            android:textSize="14dp"
+            android:textColor="#fffafafa"
+            android:id="@+id/runtime"
+            android:layout_below="@id/moviePoster"
+            android:layout_toRightOf="@id/releaseYear"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5.0dp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:text="Genre, Genre, Genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="default"
+            android:textSize="14dp"
+            android:textColor="#fffafafa"
+            android:id="@+id/movieGenres"
+            android:layout_below="@id/moviePoster"
+            android:layout_toRightOf="@id/runtime"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5.0dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
 </ScrollView>

@@ -29,6 +29,7 @@ namespace MovieSearch.Droid.Activities
             this._movieDetails = movieDetails;
             this._api = api;
             GetAllCastMembers(_movieDetails);
+            GetMovieDetail(_movieDetails);
         }
 
 
@@ -86,6 +87,23 @@ namespace MovieSearch.Droid.Activities
                 await _api.GetCreditList(movie);
             }
             //NotifyDataSetChanged();
+        }
+
+        private async void GetMovieDetail(List<MovieDetails> movie)
+        {
+            foreach (MovieDetails m in movie)
+            {
+                var detail = await _api.GetMovieDetail(m.id);
+
+                m.budget = detail.budget;
+                m.description = detail.description;
+                m.genres = detail.genres;
+                m.tagLine = detail.tagLine;
+                m.runtime = detail.runtime;
+            }
+
+            NotifyDataSetChanged();
+
         }
 
         //Fill in cound here, currently 0

@@ -31,6 +31,7 @@ namespace MovieSearch.Droid.Activities
             this.ListView.ItemClick += (sender, args) =>
             {
                 _movie = _movieList[args.Position];
+                GetMovieDetail(_movie);
                 var intent = new Intent(this, typeof(MovieDetailActivity));
                 intent.PutExtra("movieDetail", JsonConvert.SerializeObject(_movie));
                 this.StartActivity(intent);
@@ -39,17 +40,15 @@ namespace MovieSearch.Droid.Activities
             this.ListAdapter = new MovieListAdapter(this, this._movieList, this._api);
         }
 
-        //private void ShowAlert(int position)
-        //{
-        //    var movie = this._movieList[position];
-        //    var alertBuilder = new AlertDialog.Builder(this);
-        //    alertBuilder.SetTitle("Person selected");
-        //    alertBuilder.SetMessage(movie.title);
-        //    alertBuilder.SetMessage(movie.runtime);
-        //    alertBuilder.SetCancelable(true);
-        //    alertBuilder.SetPositiveButton("OK", (e, args) => { });
-        //    var dialog = alertBuilder.Create();
-        //    dialog.Show();
-        //}
+        private async void GetMovieDetail(MovieDetails movie)
+        {
+            var detail = await _api.GetMovieDetail(movie.id);
+
+            movie.budget = detail.budget;
+            movie.description = detail.description;
+            movie.genres = detail.genres;
+            movie.tagLine = detail.tagLine;
+            movie.runtime = detail.runtime;
+        }
     }
 }

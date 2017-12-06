@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>6.12.2017 14:29:15</xs:documentation>
+    <xs:documentation>6.12.2017 16:55:26</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17089,13 +17089,16 @@
             <xs:enumeration value="@+id/checkedTextView1" />
             <xs:enumeration value="@id/actors" />
             <xs:enumeration value="@id/getMovieButton" />
-            <xs:enumeration value="@id/imageView1" />
             <xs:enumeration value="@id/informationText" />
             <xs:enumeration value="@id/listItem" />
+            <xs:enumeration value="@id/movieGenres" />
+            <xs:enumeration value="@id/moviePoster" />
+            <xs:enumeration value="@id/movieTagline" />
             <xs:enumeration value="@id/movieTitleInputField" />
             <xs:enumeration value="@id/poster" />
+            <xs:enumeration value="@id/releaseYear" />
             <xs:enumeration value="@id/resultText" />
-            <xs:enumeration value="@id/tagline" />
+            <xs:enumeration value="@id/runtime" />
             <xs:enumeration value="@id/title" />
             <xs:enumeration value="@id/year" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
