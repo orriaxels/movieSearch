@@ -50,7 +50,8 @@ namespace MovieSearch.Services
                         posterFilePath = "",
                         runtime = "",
                         genres = new List<String>(),
-                        actors = new List<String>()
+                        actors = new List<String>(),
+                        characters = new List<String>()
                     });
                 }
             }
@@ -67,6 +68,7 @@ namespace MovieSearch.Services
                 for (int i = 0; i < cast.Item.CastMembers.Count && i < 3; i++)
                 {
                     movie.actors.Add(cast.Item.CastMembers[i].Name);
+                    movie.characters.Add(cast.Item.CastMembers[i].Character);
                 }
             }
         }
@@ -113,7 +115,6 @@ namespace MovieSearch.Services
             {
                 foreach (MovieInfo info in response.Results)
                 {
-                    Debug.WriteLine(info.Title);
                     movies.Add(new MovieDetails
                     {
                         id = info.Id,
@@ -125,12 +126,12 @@ namespace MovieSearch.Services
                         posterFilePath = "",
                         runtime = "",
                         genres = new List<String>(),
-                        actors = new List<String>()
+                        actors = new List<String>(),
+                        characters = new List<String>()
                     });
                 }
             }
 
-            Debug.WriteLine("Before returning");
             return movies;
         }
 

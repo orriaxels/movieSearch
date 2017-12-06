@@ -38,18 +38,20 @@ namespace MovieSearch.Droid.Activities
             movieSearchbutton.Click += async (object sender, EventArgs e) => 
             {
                 _spinner = new SpinnerLoader(this);
-                this._spinner.setSpinnerMessage("Searching for movies...");
+                this._spinner.setSpinnerMessage("Searching for \"" + movieSearchText.Text + "\"");
                 this._spinner.show();
                 
                 var manager = (InputMethodManager)this.GetSystemService(InputMethodService);
                 manager.HideSoftInputFromWindow(movieSearchText.WindowToken, 0);                
-                await MovieService.GetMovieByTitle(movieSearchText.Text);                
+                await MovieService.GetMovieByTitle(movieSearchText.Text);  
                 var intent = new Intent(this, typeof(MovieListActivity));
                 intent.PutExtra("movieList", JsonConvert.SerializeObject(MovieService.GetMovies()));
-                this.StartActivity(intent);
+                intent.PutExtra("searchText", movieSearchText.Text);
 
-                this._spinner.setSpinnerMessage("Finished!");
+                this._spinner.setSpinnerMessage("Enjoy!");
                 this._spinner.hide();
+
+                this.StartActivity(intent);
             };
 		}
 	}
