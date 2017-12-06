@@ -21,15 +21,13 @@ namespace MovieSearch.Droid.Activities
         private readonly Activity _context;
         private readonly List<MovieDetails> _movieDetails;
         private readonly MovieService _api;
-        private ImageDownloader _imageDownloader;
-        IImageStorage storageClient = new StorageClient();
+
 
         public MovieListAdapter(Activity context, List<MovieDetails> movieDetails, MovieService api)
         {
             this._context = context;
             this._movieDetails = movieDetails;
             this._api = api;
-            this._imageDownloader = new ImageDownloader(storageClient);
             GetAllCastMembers(_movieDetails);
         }
 
@@ -57,8 +55,8 @@ namespace MovieSearch.Droid.Activities
             
             view.FindViewById<TextView>(Resource.Id.title).Text = movie.title;
             view.FindViewById<TextView>(Resource.Id.year).Text = "(" + movie.releaseDate.Year.ToString() + ")";
-            var resourceId = this._context.Resources.GetIdentifier(movie.imageUrl, "drawable", this._context.PackageName);
-            view.FindViewById<ImageView>(Resource.Id.poster).SetBackgroundResource(resourceId);
+            //var resourceId = this._context.Resources.GetIdentifier(movie.imageUrl, "drawable", this._context.PackageName);
+            //view.FindViewById<ImageView>(Resource.Id.poster).SetBackgroundResource(resourceId);
 
             var allActors = "";
 
@@ -80,11 +78,6 @@ namespace MovieSearch.Droid.Activities
             view.FindViewById<TextView>(Resource.Id.actors).Text = allActors;
 
             return view;
-        }
-
-        private async void DownloadPosters(List<MovieDetails> movies)
-        {
-            await _imageDownloader.DownloadImagesInList(movies);
         }
 
         private async void GetAllCastMembers(List<MovieDetails> movies)

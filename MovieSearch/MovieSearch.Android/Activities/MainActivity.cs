@@ -20,9 +20,7 @@ namespace MovieSearch.Droid.Activities
 	public class MainActivity : Activity
     {        
         public static MovieService MovieService { get; set; }
-    
-        private List<MovieDetails> _movieList;
-        private MovieService _api;
+         
         private SpinnerLoader _spinner;
            
 		protected override void OnCreate (Bundle bundle)
