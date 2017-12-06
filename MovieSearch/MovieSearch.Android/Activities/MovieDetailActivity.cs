@@ -12,13 +12,17 @@ using Android.Widget;
 using MovieSearch.Model;
 using MovieSearch.Services;
 using Newtonsoft.Json;
+using Com.Bumptech.Glide;
 
 namespace MovieSearch.Droid.Activities
 {
     [Activity(Label = "")]
     public class MovieDetailActivity : Activity
     {
+        private readonly string ImageUrl = "http://image.tmdb.org/t/p/original";
+
         private MovieDetails _movie;
+        private ImageView _imageView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,10 +38,16 @@ namespace MovieSearch.Droid.Activities
             var genres = this.FindViewById<TextView>(Resource.Id.movieGenres);
             var runtime = this.FindViewById<TextView>(Resource.Id.runtime);
             var tagline = this.FindViewById<TextView>(Resource.Id.movieTagline);
+            this._imageView = (ImageView)this.FindViewById<ImageView>(Resource.Id.moviePoster);
 
             releaseYear.Text = _movie.releaseDate.Year.ToString();
             runtime.Text = _movie.runtime + " minutes";
             tagline.Text = _movie.description;
+
+            if (_movie.imageUrl != "" || _movie.imageUrl != null)
+            {
+                Glide.With(this).Load(ImageUrl + _movie.imageUrl).Into(_imageView);
+            }
 
             var movieGenres = "";
             if(_movie.genres != null)
