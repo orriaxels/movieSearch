@@ -2,6 +2,10 @@ MovieSearch.Droid.Activities.MainActivity, MovieSearch.Android;md56ca4fe0a930751
 MovieSearch.Droid.Activities.MainActivity, MovieSearch.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ca4fe0a930751885ceb8a6144e0ff0f.MainActivity
 MovieSearch.Droid.Activities.MainActivity;md56ca4fe0a930751885ceb8a6144e0ff0f.MainActivity
 moviesearch.droid.activities.MainActivity;md56ca4fe0a930751885ceb8a6144e0ff0f.MainActivity
+MovieSearch.Droid.Activities.MovieDetailActivity, MovieSearch.Android;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieDetailActivity
+MovieSearch.Droid.Activities.MovieDetailActivity, MovieSearch.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieDetailActivity
+MovieSearch.Droid.Activities.MovieDetailActivity;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieDetailActivity
+moviesearch.droid.activities.MovieDetailActivity;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieDetailActivity
 MovieSearch.Droid.Activities.MovieListActivity, MovieSearch.Android;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieListActivity
 MovieSearch.Droid.Activities.MovieListActivity, MovieSearch.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieListActivity
 MovieSearch.Droid.Activities.MovieListActivity;md56ca4fe0a930751885ceb8a6144e0ff0f.MovieListActivity

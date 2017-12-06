@@ -4,4 +4,12 @@
     <ResultingAbi>x86_64</ResultingAbi>
     <SdkVersion>25</SdkVersion>
   </Device>
+  <Device id="FA7190303123">
+    <ResultingAbi>arm64-v8a</ResultingAbi>
+    <SdkVersion>26</SdkVersion>
+  </Device>
+  <Device id="LGH8504b32dbb1">
+    <ResultingAbi>arm64-v8a</ResultingAbi>
+    <SdkVersion>24</SdkVersion>
+  </Device>
 </Devices>

@@ -6,6 +6,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="MovieSearch.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="MovieSearch.Android" android:name="md56ca4fe0a930751885ceb8a6144e0ff0f.MainActivity" />
+    <activity android:label="MovieDetailActivity" android:name="md56ca4fe0a930751885ceb8a6144e0ff0f.MovieDetailActivity" />
     <activity android:label="MovieListActivity" android:name="md56ca4fe0a930751885ceb8a6144e0ff0f.MovieListActivity" />
     <activity android:icon="@drawable/icon" android:label="SplashActivity" android:name="md56ca4fe0a930751885ceb8a6144e0ff0f.SplashActivity">
       <intent-filter>
