@@ -36,7 +36,8 @@
             android:id="@+id/movieTagline"
             android:layout_marginLeft="5.0dp"
             android:layout_marginRight="5.0dp"
-            android:layout_below="@id/releaseYear" />
+            android:layout_below="@id/releaseYear"
+            android:layout_marginTop="5dp" />
         <TextView
             android:text="Runtime"
             android:layout_width="wrap_content"
@@ -63,6 +64,5 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5.0dp"
             android:layout_marginTop="5dp" />
-
     </RelativeLayout>
 </ScrollView>

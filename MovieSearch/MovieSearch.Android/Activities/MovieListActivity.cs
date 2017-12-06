@@ -15,40 +15,37 @@ using MovieSearch.Services;
 
 namespace MovieSearch.Droid.Activities
 {
-    [Activity(Label = "MovieListActivity")]
+    [Activity(Label = "")]
     public class MovieListActivity : ListActivity
     {
         private List<MovieDetails> _movieList;
         private MovieDetails _movie;
         private MovieService _api = new MovieService();
+        private String searchText;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             var jsonString = this.Intent.GetStringExtra("movieList");
+            searchText = this.Intent.GetStringExtra("searchText");
             this._movieList = JsonConvert.DeserializeObject<List<MovieDetails>>(jsonString);
 
             this.ListView.ItemClick += (sender, args) =>
             {
                 _movie = _movieList[args.Position];
-                GetMovieDetail(_movie);
                 var intent = new Intent(this, typeof(MovieDetailActivity));
                 intent.PutExtra("movieDetail", JsonConvert.SerializeObject(_movie));
+
                 this.StartActivity(intent);
             };
 
             this.ListAdapter = new MovieListAdapter(this, this._movieList, this._api);
         }
 
-        private async void GetMovieDetail(MovieDetails movie)
+        public override void OnAttachedToWindow()
         {
-            var detail = await _api.GetMovieDetail(movie.id);
-
-            movie.budget = detail.budget;
-            movie.description = detail.description;
-            movie.genres = detail.genres;
-            movie.tagLine = detail.tagLine;
-            movie.runtime = detail.runtime;
+            base.OnAttachedToWindow();
+            Window.SetTitle("Results for \"" + searchText +"\"");
         }
     }
 }

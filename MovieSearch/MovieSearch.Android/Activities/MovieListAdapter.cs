@@ -12,24 +12,26 @@ using Android.Widget;
 using MovieSearch.Model;
 using MovieSearch.Services;
 using MovieDownload;
+using Com.Bumptech.Glide;
 
 namespace MovieSearch.Droid.Activities
 {
     public class MovieListAdapter : BaseAdapter<MovieDetails>
     {
-
+        private readonly string ImageUrl = "http://image.tmdb.org/t/p/original";
         private readonly Activity _context;
         private readonly List<MovieDetails> _movieDetails;
         private readonly MovieService _api;
-
+        private ImageView _imageView;
 
         public MovieListAdapter(Activity context, List<MovieDetails> movieDetails, MovieService api)
         {
             this._context = context;
             this._movieDetails = movieDetails;
             this._api = api;
-            GetAllCastMembers(_movieDetails);
             GetMovieDetail(_movieDetails);
+            this.GetAllCastMembers(_movieDetails);
+
         }
 
 
@@ -46,6 +48,7 @@ namespace MovieSearch.Droid.Activities
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             var view = convertView;
+            var allActors = "";
 
             if (view == null)
             {
@@ -53,13 +56,18 @@ namespace MovieSearch.Droid.Activities
             }
                 
             var movie = this._movieDetails[position];
-            
+            var rating = movie.voteAverage * 10;
+            Console.WriteLine(rating);
             view.FindViewById<TextView>(Resource.Id.title).Text = movie.title;
             view.FindViewById<TextView>(Resource.Id.year).Text = "(" + movie.releaseDate.Year.ToString() + ")";
-            //var resourceId = this._context.Resources.GetIdentifier(movie.imageUrl, "drawable", this._context.PackageName);
-            //view.FindViewById<ImageView>(Resource.Id.poster).SetBackgroundResource(resourceId);
+            view.FindViewById<RatingBar>(Resource.Id.ratings).Progress = (int)rating;
+            this._imageView = (ImageView)view.FindViewById<ImageView>(Resource.Id.poster);
 
-            var allActors = "";
+            if(movie.imageUrl != "" || movie.imageUrl != null)
+            {
+                Glide.With(this._context).Load(ImageUrl + movie.imageUrl).Into(_imageView);    
+            }
+
 
             if (movie.actors != null)
             {
@@ -67,11 +75,11 @@ namespace MovieSearch.Droid.Activities
                 {
                     if (i == movie.actors.Count - 1)
                     {
-                        allActors += movie.actors[i];
+                        allActors += movie.actors[i] + " - " + movie.characters[i];
                     }
                     else
                     {
-                        allActors += movie.actors[i] + ", ";
+                        allActors += movie.actors[i] + " - " + movie.characters[i] + "\n";
                     }
                 }
             }
@@ -85,8 +93,8 @@ namespace MovieSearch.Droid.Activities
             foreach (MovieDetails movie in movies)
             {
                 await _api.GetCreditList(movie);
+                NotifyDataSetChanged();
             }
-            //NotifyDataSetChanged();
         }
 
         private async void GetMovieDetail(List<MovieDetails> movie)

@@ -40,18 +40,22 @@ namespace MovieSearch.Droid.Activities
             tagline.Text = _movie.description;
 
             var movieGenres = "";
-            for (int i = 0; i < _movie.genres.Count; i++)
+            if(_movie.genres != null)
             {
-                if (i + 1 == _movie.genres.Count)
+                for (int i = 0; i < _movie.genres.Count; i++)
                 {
-                    movieGenres += _movie.genres[i];
+                    if (i + 1 == _movie.genres.Count)
+                    {
+                        movieGenres += _movie.genres[i];
+                    }
+                    else
+                    {
+                        movieGenres += _movie.genres[i] + ", ";
+                    }
                 }
-                else
-                {
-                    movieGenres += _movie.genres[i] + ", ";
-                }
+                genres.Text = fixGenreString(movieGenres);
             }
-            genres.Text = fixGenreString(movieGenres);
+            
         }
 
         private string fixGenreString(string str)

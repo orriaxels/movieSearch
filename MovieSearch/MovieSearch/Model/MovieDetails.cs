@@ -12,6 +12,7 @@ namespace MovieSearch.Model
         public DateTime releaseDate { get; set; }
         public List<String> actors { get; set; }
         public List<String> genres { get; set; }
+        public List<String> characters { get; set; }
         public String posterFilePath { get; set; }
         public String description { get; set; }
         public double voteAverage { get; set; }

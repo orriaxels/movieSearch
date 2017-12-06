@@ -85,8 +85,8 @@ namespace MovieSearch.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06000d
-			public const int actors = 2131099661;
+			// aapt resource value: 0x7f06000e
+			public const int actors = 2131099662;
 			
 			// aapt resource value: 0x7f060002
 			public const int getMovieButton = 2131099650;
@@ -109,8 +109,11 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060001
 			public const int movieTitleInputField = 2131099649;
 			
-			// aapt resource value: 0x7f06000b
-			public const int poster = 2131099659;
+			// aapt resource value: 0x7f06000a
+			public const int poster = 2131099658;
+			
+			// aapt resource value: 0x7f06000d
+			public const int ratings = 2131099661;
 			
 			// aapt resource value: 0x7f060005
 			public const int releaseYear = 2131099653;
@@ -121,8 +124,8 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060007
 			public const int runtime = 2131099655;
 			
-			// aapt resource value: 0x7f06000a
-			public const int title = 2131099658;
+			// aapt resource value: 0x7f06000b
+			public const int title = 2131099659;
 			
 			// aapt resource value: 0x7f06000c
 			public const int year = 2131099660;
