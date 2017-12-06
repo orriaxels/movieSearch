@@ -97,8 +97,8 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060000
 			public const int informationText = 2131099648;
 			
-			// aapt resource value: 0x7f060006
-			public const int listItem = 2131099654;
+			// aapt resource value: 0x7f060007
+			public const int listItem = 2131099655;
 			
 			// aapt resource value: 0x7f060001
 			public const int movieTitleInputField = 2131099649;
@@ -109,11 +109,11 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060003
 			public const int resultText = 2131099651;
 			
-			// aapt resource value: 0x7f060005
-			public const int textView1 = 2131099653;
+			// aapt resource value: 0x7f060006
+			public const int tagline = 2131099654;
 			
-			// aapt resource value: 0x7f060007
-			public const int title = 2131099655;
+			// aapt resource value: 0x7f060005
+			public const int title = 2131099653;
 			
 			// aapt resource value: 0x7f060009
 			public const int year = 2131099657;

@@ -19,6 +19,7 @@ namespace MovieSearch.Droid.Activities
     public class MovieListActivity : ListActivity
     {
         private List<MovieDetails> _movieList;
+        private MovieDetails _movie;
         private MovieService _api = new MovieService();
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,13 +30,13 @@ namespace MovieSearch.Droid.Activities
 
             this.ListView.ItemClick += (sender, args) =>
             {
+                _movie = _movieList[args.Position];
                 var intent = new Intent(this, typeof(MovieDetailActivity));
-                intent.PutExtra("movieDetail", JsonConvert.SerializeObject(args.Position));
+                intent.PutExtra("movieDetail", JsonConvert.SerializeObject(_movie));
                 this.StartActivity(intent);
             };
 
             this.ListAdapter = new MovieListAdapter(this, this._movieList, this._api);
-            // Create your application here
         }
 
         //private void ShowAlert(int position)

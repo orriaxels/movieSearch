@@ -9,19 +9,38 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MovieSearch.Model;
+using MovieSearch.Services;
+using Newtonsoft.Json;
 
 namespace MovieSearch.Droid.Activities
 {
-    [Activity(Label = "MovieDetailActivity")]
+    [Activity(Label = "")]
     public class MovieDetailActivity : Activity
     {
+        private MovieDetails _movie;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
+            var jsonString = this.Intent.GetStringExtra("movieDetail");
+            this._movie = JsonConvert.DeserializeObject<MovieDetails>(jsonString);
+
             SetContentView(Resource.Layout.MovieDetail);
 
+            var movieTitle = this.FindViewById<TextView>(Resource.Id.title);
 
+            movieTitle.Text = _movie.title;
+
+
+
+        }
+
+        public override void OnAttachedToWindow()
+        {
+            base.OnAttachedToWindow();
+            Window.SetTitle(_movie.title);
         }
     }
 }
