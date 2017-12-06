@@ -115,6 +115,7 @@ C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch.Android/ob
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/color.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/marilyn_monroe.png
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/bttdmkgivoi0ffip1spuzi2oqg6.jpg
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/moviedetail.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll.config
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.pdb
@@ -142,6 +143,7 @@ C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.pdb
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\bin\com.companyname.MovieSearch.apk
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\movielistitem.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\bttdmkgivoi0ffip1spuzi2oqg6.jpg
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\moviedetail.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\main.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\strings.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\icon.png
@@ -153,10 +155,3 @@ C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\color.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\marilyn_monroe.png
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\R.cs.flag
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\uploadflags.txt
-C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\DM.MovieApi.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\MovieSearch.Android.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\MovieSearch.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\moviedetail.xml

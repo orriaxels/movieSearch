@@ -27,14 +27,7 @@ namespace MovieSearch.Droid.Activities
             var jsonString = this.Intent.GetStringExtra("movieDetail");
             this._movie = JsonConvert.DeserializeObject<MovieDetails>(jsonString);
 
-            SetContentView(Resource.Layout.MovieDetail);
-
-            var movieTitle = this.FindViewById<TextView>(Resource.Id.title);
-
-            movieTitle.Text = _movie.title;
-
-
-
+            SetContentView(Resource.Layout.MovieDetail);        
         }
 
         public override void OnAttachedToWindow()
