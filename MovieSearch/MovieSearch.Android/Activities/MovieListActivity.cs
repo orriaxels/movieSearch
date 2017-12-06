@@ -34,7 +34,6 @@ namespace MovieSearch.Droid.Activities
             };
 
             this.ListAdapter = new MovieListAdapter(this, this._movieList, this._api);
-        
             // Create your application here
         }
 

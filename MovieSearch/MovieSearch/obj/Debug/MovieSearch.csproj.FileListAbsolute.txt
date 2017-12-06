@@ -34,24 +34,25 @@ C:/Users/skorri/Documents/HR/mapp/week 1 - ios/movieSearch/MovieSearch/MovieSear
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/newMovie/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.dll
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.pdb
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.dll
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.dll
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.xml
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.pdb
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.xml
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
-C:\Users\skorri\Documents\HR\mapp\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.dll
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\MovieSearch.pdb
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.dll
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.dll
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\Newtonsoft.Json.xml
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.pdb
-C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.xml
-C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csprojResolveAssemblyReference.cache
-C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
-C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
-C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.dll
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.pdb
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.dll
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.dll
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.xml
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.pdb
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.xml
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
+C:/Users/skorri/Documents/HR/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.dll
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/MovieSearch.pdb
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.dll
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.dll
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/Newtonsoft.Json.xml
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.pdb
+C:/movieSearch/MovieSearch/MovieSearch/bin/Debug/DM.MovieApi.xml
+C:/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csprojResolveAssemblyReference.cache
+C:/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csproj.CoreCompileInputs.cache
+C:/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.dll
+C:/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.pdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch/obj/Debug/MovieSearch.csprojResolveAssemblyReference.cache

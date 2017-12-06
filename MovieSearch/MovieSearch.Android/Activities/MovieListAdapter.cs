@@ -76,7 +76,6 @@ namespace MovieSearch.Droid.Activities
             }
 
             view.FindViewById<TextView>(Resource.Id.actors).Text = allActors;
-
             return view;
         }
 
@@ -86,6 +85,7 @@ namespace MovieSearch.Droid.Activities
             {
                 await _api.GetCreditList(movie);
             }
+            //NotifyDataSetChanged();
         }
 
         //Fill in cound here, currently 0

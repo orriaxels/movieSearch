@@ -64,10 +64,13 @@ namespace MovieSearch.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int btTdmkgIvOi0FFip1sPuZI2oQG6 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int marilyn_monroe = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int marilyn_monroe = 2130837506;
 			
 			static Drawable()
 			{
@@ -97,8 +100,8 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060001
 			public const int movieTitleInputField = 2131099649;
 			
-			// aapt resource value: 0x7f060007
-			public const int poster = 2131099655;
+			// aapt resource value: 0x7f060006
+			public const int poster = 2131099654;
 			
 			// aapt resource value: 0x7f060003
 			public const int resultText = 2131099651;
@@ -106,8 +109,8 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f060005
 			public const int title = 2131099653;
 			
-			// aapt resource value: 0x7f060006
-			public const int year = 2131099654;
+			// aapt resource value: 0x7f060007
+			public const int year = 2131099655;
 			
 			static Id()
 			{
