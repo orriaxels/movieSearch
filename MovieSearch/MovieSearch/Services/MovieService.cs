@@ -76,8 +76,17 @@ namespace MovieSearch.Services
 
             if(cast.Item != null)
             {
-                var director = cast.Item.CrewMembers.Single(x => x.Job == "Director");
-                movie.director = director.Name;
+                var director = cast.Item.CrewMembers.FirstOrDefault(x => x.Job == "Director");
+                if(director != null)
+                {
+                    if(director.Name != "")
+                        movie.director = director.Name;
+                }
+                else
+                {
+                    movie.director = "Unknown";
+                }
+                
             }
         }
 
@@ -94,7 +103,7 @@ namespace MovieSearch.Services
                     runtime = movieInfo.Item.Runtime.ToString(),
                     description = movieInfo.Item.Overview,
                     tagLine = movieInfo.Item.Tagline,
-                    budget = movieInfo.Item.Budget,
+                    budget = movieInfo.Item.Budget,                    
                     genres = new List<String>()
                 };
 

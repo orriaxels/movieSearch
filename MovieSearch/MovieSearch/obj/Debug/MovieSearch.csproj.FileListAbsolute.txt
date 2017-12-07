@@ -8,3 +8,4 @@ C:\movieSearch\MovieSearch\MovieSearch\bin\Debug\DM.MovieApi.xml
 C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
 C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
 C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb
+C:\movieSearch\MovieSearch\MovieSearch\obj\Debug\MovieSearch.csprojResolveAssemblyReference.cache

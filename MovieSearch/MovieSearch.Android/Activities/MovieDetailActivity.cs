@@ -42,7 +42,7 @@ namespace MovieSearch.Droid.Activities
 
             releaseYear.Text = _movie.releaseDate.Year.ToString();
             runtime.Text = _movie.runtime + " minutes";
-            tagline.Text = _movie.description;
+            tagline.Text = _movie.director;
 
             if (_movie.imageUrl != "" || _movie.imageUrl != null)
             {
