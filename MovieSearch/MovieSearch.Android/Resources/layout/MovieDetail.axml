@@ -9,10 +9,9 @@
         android:orientation="vertical">
         <ImageView
             android:layout_width="470dp"
-            android:layout_height="630dp"
+            android:layout_height="345.0dp"
             android:id="@+id/moviePoster"
             android:layout_marginTop="6.0dp"
-            android:layout_gravity="center"
             android:outlineProvider="none" />
         <TextView
             android:text="Year"

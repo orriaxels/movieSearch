@@ -37,9 +37,3 @@ C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\color.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\marilyn_monroe.png
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\R.cs.flag
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\uploadflags.txt
-C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\DM.MovieApi.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\MovieSearch.Android.dll.mdb
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\assets\MovieSearch.dll.mdb
