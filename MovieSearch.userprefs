@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{E95A0D9D-DE52-47B1-A565-6062954E1812}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch/Model/MovieDetails.cs">
     <Files>
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListActivity.cs" Line="48" Column="37" />
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListAdapter.cs" Line="55" Column="14" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListActivity.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListAdapter.cs" Line="1" Column="1" />
       <File FileName="MovieSearch/MovieSearch.iOS/Controllers/MovieListController.cs" Line="50" Column="1" />
       <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="69" Column="18" />
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieDetailActivity.cs" Line="33" Column="1" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieDetailActivity.cs" Line="1" Column="1" />
       <File FileName="MovieSearch/MovieSearch.Android/Activities/MainActivity.cs" Line="51" Column="59" />
+      <File FileName="MovieSearch/MovieSearch/Model/MovieDetails.cs" Line="16" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,12 +15,13 @@
           <Node name="MovieSearch" expanded="True">
             <Node name="MovieDownload" expanded="True" />
             <Node name="MovieSearch" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="MovieDetails.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="MovieSearch.Android" expanded="True">
-              <Node name="Activities" expanded="True">
-                <Node name="MovieListActivity.cs" selected="True" />
-              </Node>
+              <Node name="Activities" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
               </Node>
@@ -32,7 +34,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android AndroidDesignerPreferredDevice="5.1in WVGA" PreferredExecutionTarget="Android.LGH8504b32dbb1" />
+  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android AndroidDesignerPreferredDevice="5.1in WVGA" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|ARM" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

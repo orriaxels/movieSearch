@@ -58,7 +58,7 @@ namespace MovieSearch.Droid.Activities
             var movie = this._movieDetails[position];
             var rating = movie.voteAverage * 10;
             Console.WriteLine(rating);
-            view.FindViewById<TextView>(Resource.Id.title).Text = movie.title;
+            view.FindViewById<TextView>(Resource.Id.title).Text = movie.director;
             view.FindViewById<TextView>(Resource.Id.year).Text = "(" + movie.releaseDate.Year.ToString() + ")";
             view.FindViewById<RatingBar>(Resource.Id.ratings).Progress = (int)rating;
             this._imageView = (ImageView)view.FindViewById<ImageView>(Resource.Id.poster);

@@ -13,7 +13,14 @@
             android:id="@+id/moviePoster"
             android:layout_marginTop="6.0dp"
             android:layout_gravity="center"
-            android:outlineProvider="none" />
+            android:outlineProvider="none"
+            android:src="@drawable/bttdmkgivoi0ffip1spuzi2oqg6"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="10dp"
+            android:requiresFadingEdge="none"
+            android:drawingCacheQuality="high"
+            android:layerType="software"
+            android:fitsSystemWindows="true" />
         <TextView
             android:text="Year"
             android:layout_width="wrap_content"

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Diagnostics;
 using System.Collections.Generic;
 using DM.MovieApi;
@@ -70,6 +71,12 @@ namespace MovieSearch.Services
                     movie.actors.Add(cast.Item.CastMembers[i].Name);
                     movie.characters.Add(cast.Item.CastMembers[i].Character);
                 }
+            }
+
+            if(cast.Item != null)
+            {
+                var director = cast.Item.CrewMembers.Single(x => x.Job == "Director");
+                movie.director = director.Name;
             }
         }
 
