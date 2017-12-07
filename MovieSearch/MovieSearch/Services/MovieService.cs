@@ -86,7 +86,6 @@ namespace MovieSearch.Services
                 {
                     movie.director = "Unknown";
                 }
-                
             }
         }
 

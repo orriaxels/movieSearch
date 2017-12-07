@@ -3,7 +3,8 @@
     android:id="@+id/listItem"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:backgroundTint="#ffff8a80">
     <ImageView
         android:id="@+id/poster"
         android:layout_width="84dp"
