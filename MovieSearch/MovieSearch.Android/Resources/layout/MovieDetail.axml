@@ -2,8 +2,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/darkerGray">
     <RelativeLayout
+        android:id="@+id/rl"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
@@ -12,8 +14,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
-            android:layout_marginBottom="10dp">
+            android:background="@color/gray"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp">
             <ImageView
                 android:layout_width="213dp"
                 android:layout_height="320dp"
@@ -75,16 +83,60 @@
                 android:maxHeight="320dp"
                 android:layout_marginRight="5dp"
                 android:maxLines="17" />
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/releaseYear"
+                android:id="@+id/ratings"
+                android:max="100"
+                android:numStars="10"
+                android:progress="0"
+                android:progressTint="#ffffff00"
+                android:stepSize="0.1"
+                android:progressBackgroundTint="#ffffff00"
+                android:secondaryProgressTint="#ffffff00"
+                android:indeterminateTint="#ffffff00"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:text="Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ratings"
+                android:fontFamily="default"
+                android:id="@+id/movieRating"
+                android:layout_below="@id/movieGenres"
+                android:layout_marginTop="8.0dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+            <TextView
+                android:text="/10"
+                android:layout_below="@id/movieGenres"
+                android:layout_toRightOf="@id/movieRating"
+                android:fontFamily="default"
+                android:layout_marginTop="8.0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/rl2"
-            android:layout_width="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/holo_green_dark"
-            android:layout_below="@id/rl1">
+            android:layout_below="@id/rl1"
+            android:id="@+id/rl2"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="10dp">
             <TextView
-                android:text="Tob Billed Cast:"
+                android:text="Top Billed Cast:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/releaseYear"
@@ -93,7 +145,6 @@
                 android:textSize="20dp"
                 android:textColor="#fffafafa"
                 android:layout_marginLeft="5.0dp"
-                android:layout_marginTop="8.0dp"
                 android:textStyle="normal" />
             <TextView
                 android:text="Actor - "
@@ -141,8 +192,7 @@
                 android:id="@+id/director"
                 android:layout_below="@id/directorText"
                 android:layout_marginLeft="5.0dp"
-                android:layout_marginRight="5.0dp"
-                android:layout_marginTop="2dp" />
+                android:layout_marginRight="5.0dp" />
             <TextView
                 android:text="Writers"
                 android:layout_width="wrap_content"
@@ -165,8 +215,20 @@
                 android:layout_below="@id/writerText"
                 android:id="@+id/writer"
                 android:layout_marginLeft="5.0dp"
-                android:layout_marginRight="5.0dp"
-                android:layout_marginTop="2dp" />
+                android:layout_marginRight="5.0dp" />
         </RelativeLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl2"
+            android:id="@+id/rl3"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/gray"
+            android:layout_marginBottom="10dp" />
     </RelativeLayout>
 </ScrollView>

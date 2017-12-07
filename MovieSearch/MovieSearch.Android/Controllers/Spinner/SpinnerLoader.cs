@@ -1,14 +1,15 @@
 ﻿using System;
 using Android.App;
+using Android.Content;
 
 namespace MovieSearch.Droid.Controllers.Spinner
 {
     public class SpinnerLoader
     {
         private ProgressDialog _progressBar;
-        public SpinnerLoader(Activity activity)
+        public SpinnerLoader(Context context)
         {
-            this._progressBar = new ProgressDialog(activity);
+            this._progressBar = new ProgressDialog(context);
             this._progressBar.SetCancelable(true);
             this._progressBar.SetProgressStyle(ProgressDialogStyle.Spinner);
         }

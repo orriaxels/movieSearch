@@ -15,7 +15,7 @@ using MovieSearch.Services;
 
 namespace MovieSearch.Droid.Activities
 {
-    [Activity(Label = "")]
+    [Activity (Label = "Movie search")]
     public class MovieListActivity : ListActivity
     {
         private List<MovieDetails> _movieList;

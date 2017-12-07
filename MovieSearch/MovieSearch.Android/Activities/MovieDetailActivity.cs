@@ -33,6 +33,7 @@ namespace MovieSearch.Droid.Activities
 
             SetContentView(Resource.Layout.MovieDetail);
 
+            var rating = _movie.voteAverage * 10;
             var releaseYear = this.FindViewById<TextView>(Resource.Id.releaseYear);
             var genres = this.FindViewById<TextView>(Resource.Id.movieGenres);
             var runtime = this.FindViewById<TextView>(Resource.Id.runtime);
@@ -41,9 +42,14 @@ namespace MovieSearch.Droid.Activities
             var actors = this.FindViewById<TextView>(Resource.Id.actors);
             var characters = this.FindViewById<TextView>(Resource.Id.characters);
             var writers = this.FindViewById<TextView>(Resource.Id.writer);
+            var movieRating = this.FindViewById<TextView>(Resource.Id.movieRating);
+            this.FindViewById<RatingBar>(Resource.Id.ratings).Progress = (int)rating;
             this._imageView = (ImageView)this.FindViewById<ImageView>(Resource.Id.moviePoster);
-            
 
+
+            movieRating.Text = _movie.voteAverage.ToString();
+            
+           
             releaseYear.Text = _movie.releaseDate.Year.ToString();
             runtime.Text = _movie.runtime + " minutes";
             director.Text = "" + _movie.director;
