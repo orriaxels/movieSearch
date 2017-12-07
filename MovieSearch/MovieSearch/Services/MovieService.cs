@@ -50,6 +50,7 @@ namespace MovieSearch.Services
                         voteCount = info.VoteCount,
                         posterFilePath = "",
                         runtime = "",
+                        director = "",
                         genres = new List<String>(),
                         actors = new List<String>(),
                         characters = new List<String>()
@@ -132,6 +133,7 @@ namespace MovieSearch.Services
                         voteCount = info.VoteCount,
                         posterFilePath = "",
                         runtime = "",
+                        director = "",
                         genres = new List<String>(),
                         actors = new List<String>(),
                         characters = new List<String>()
