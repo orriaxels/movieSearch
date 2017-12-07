@@ -51,6 +51,7 @@ namespace MovieSearch.Services
                         posterFilePath = "",
                         runtime = "",
                         director = "",
+                        writers = new List<String>(),
                         genres = new List<String>(),
                         actors = new List<String>(),
                         characters = new List<String>()
@@ -84,9 +85,25 @@ namespace MovieSearch.Services
                 }
                 else
                 {
-                    movie.director = "Unknown";
+                    movie.director = "Not defined";
                 }
-                
+
+                var writers = cast.Item.CrewMembers.ToList();
+                writers.Where(x => x.Job == "Screenplay").ToList();
+                if (writers != null)
+                {
+                    for (int i = 0; i < writers.Count && i < 3; i++)
+                    {                        
+                        if (writers[i].Name != "")
+                        {
+                            movie.writers.Add(writers[i].Name);
+                        }
+                    }                    
+                }
+                else
+                {
+                    movie.writers.Add("Unknown");
+                }
             }
         }
 
@@ -143,6 +160,7 @@ namespace MovieSearch.Services
                         posterFilePath = "",
                         runtime = "",
                         director = "",
+                        writers = new List<String>(),
                         genres = new List<String>(),
                         actors = new List<String>(),
                         characters = new List<String>()

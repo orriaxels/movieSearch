@@ -31,23 +31,42 @@ namespace MovieSearch.Droid.Activities
             var jsonString = this.Intent.GetStringExtra("movieDetail");
             this._movie = JsonConvert.DeserializeObject<MovieDetails>(jsonString);
 
-            
             SetContentView(Resource.Layout.MovieDetail);
 
             var releaseYear = this.FindViewById<TextView>(Resource.Id.releaseYear);
             var genres = this.FindViewById<TextView>(Resource.Id.movieGenres);
             var runtime = this.FindViewById<TextView>(Resource.Id.runtime);
-            var tagline = this.FindViewById<TextView>(Resource.Id.movieTagline);
+            var director = this.FindViewById<TextView>(Resource.Id.director);
+            var description = this.FindViewById<TextView>(Resource.Id.description);
+            var actors = this.FindViewById<TextView>(Resource.Id.actors);
+            var characters = this.FindViewById<TextView>(Resource.Id.characters);
+            var writers = this.FindViewById<TextView>(Resource.Id.writer);
             this._imageView = (ImageView)this.FindViewById<ImageView>(Resource.Id.moviePoster);
+            
 
             releaseYear.Text = _movie.releaseDate.Year.ToString();
             runtime.Text = _movie.runtime + " minutes";
-            tagline.Text = _movie.director;
+            director.Text = "" + _movie.director;
+            description.Text = _movie.description;
 
             if (_movie.imageUrl != "" || _movie.imageUrl != null)
             {
                 Glide.With(this).Load(ImageUrl + _movie.imageUrl).Into(_imageView);
             }
+
+            var allWriters = "";
+            for(int i = 0; i < _movie.writers.Count; i++)
+            {
+                if (i + 1 == _movie.writers.Count)
+                {
+                    allWriters += _movie.writers[i];
+                }
+                else
+                {
+                    allWriters += _movie.writers[i] + ", ";
+                }
+            }
+            writers.Text = allWriters;
 
             var movieGenres = "";
             if(_movie.genres != null)
@@ -65,7 +84,27 @@ namespace MovieSearch.Droid.Activities
                 }
                 genres.Text = fixGenreString(movieGenres);
             }
-            
+
+            var allActors = "";
+            var allCharacters = "";
+            if (_movie.actors != null)
+            {
+                for (int i = 0; i < _movie.actors.Count; i++)
+                {
+                    if (i == _movie.actors.Count - 1)
+                    {
+                        allActors += _movie.actors[i];
+                        allCharacters += "- " +_movie.characters[i];
+                    }
+                    else
+                    {
+                        allActors += _movie.actors[i] + "\n";
+                        allCharacters += "- " +_movie.characters[i] + "\n";
+                    }
+                }
+            }
+            actors.Text = allActors;
+            characters.Text = allCharacters;
         }
 
         private string fixGenreString(string str)

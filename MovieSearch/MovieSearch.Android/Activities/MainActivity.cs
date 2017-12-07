@@ -35,6 +35,7 @@ namespace MovieSearch.Droid.Activities
             var movieSearchText = this.FindViewById<EditText>(Resource.Id.movieTitleInputField);
             var movieSearchbutton = FindViewById<Button> (Resource.Id.getMovieButton);
 
+            movieSearchText.Text = "Thor";
             movieSearchbutton.Click += async (object sender, EventArgs e) => 
             {
                 _spinner = new SpinnerLoader(this);
