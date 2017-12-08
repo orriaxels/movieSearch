@@ -22,16 +22,20 @@ namespace MovieSearch.Droid.Activities
         private readonly string ImageUrl = "http://image.tmdb.org/t/p/original";
 
         private MovieDetails _movie;
+        private List<Person> persons;
         private ImageView _imageView;
+        private MovieService _api;
 
         protected override void OnCreate(Bundle savedInstanceState)
-        {
+        {            
             base.OnCreate(savedInstanceState);
-
+         
             var jsonString = this.Intent.GetStringExtra("movieDetail");
             this._movie = JsonConvert.DeserializeObject<MovieDetails>(jsonString);
 
             SetContentView(Resource.Layout.MovieDetail);
+            _api = new MovieService();
+            persons = _movie.person;
 
             var rating = _movie.voteAverage * 10;
             var releaseYear = this.FindViewById<TextView>(Resource.Id.releaseYear);
@@ -45,11 +49,8 @@ namespace MovieSearch.Droid.Activities
             var movieRating = this.FindViewById<TextView>(Resource.Id.movieRating);
             this.FindViewById<RatingBar>(Resource.Id.ratings).Progress = (int)rating;
             this._imageView = (ImageView)this.FindViewById<ImageView>(Resource.Id.moviePoster);
-
-
-            movieRating.Text = _movie.voteAverage.ToString();
             
-           
+            movieRating.Text = _movie.voteAverage.ToString();         
             releaseYear.Text = _movie.releaseDate.Year.ToString();
             runtime.Text = _movie.runtime + " minutes";
             director.Text = "" + _movie.director;
@@ -58,6 +59,15 @@ namespace MovieSearch.Droid.Activities
             if (_movie.imageUrl != "" || _movie.imageUrl != null)
             {
                 Glide.With(this).Load(ImageUrl + _movie.imageUrl).Into(_imageView);
+            }           
+
+            for (int i = 0; i < persons.Count; i++)
+            {
+                var profileImage = (ImageView)this.FindViewById<ImageView>(Resource.Id.profile + i);
+                if (persons[i].posterPath != "" || persons[i].posterPath != null)
+                {
+                    Glide.With(this).Load(ImageUrl + persons[i].posterPath).Into(profileImage);
+                }                
             }
 
             var allWriters = "";

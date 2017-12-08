@@ -108,7 +108,6 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "MovieSearch.Android.dll" comes first in this list. */
 		"MovieSearch.Android.dll",
 		"Glide.dll",
-		"MovieSearch.dll",
 		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",
@@ -123,6 +122,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
+		"MovieSearch.dll",
 		"DM.MovieApi.dll",
 	};
 	public static final String[] Dependencies = new String[]{

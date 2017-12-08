@@ -30,9 +30,11 @@ namespace MovieSearch.Droid.Activities
             searchText = this.Intent.GetStringExtra("searchText");
             this._movieList = JsonConvert.DeserializeObject<List<MovieDetails>>(jsonString);
 
-            this.ListView.ItemClick += (sender, args) =>
+            this.ListView.ItemClick += async (sender, args) =>
             {
+                
                 _movie = _movieList[args.Position];
+                await _api.GetCastMembers(_movie);
                 var intent = new Intent(this, typeof(MovieDetailActivity));
                 intent.PutExtra("movieDetail", JsonConvert.SerializeObject(_movie));
 
