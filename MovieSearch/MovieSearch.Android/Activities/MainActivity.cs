@@ -18,7 +18,7 @@ using MovieSearch.Droid.Activities;
 
 namespace MovieSearch.Droid.Activities
 {
-    [Activity (Label = "Movie search", Theme = "@style/MyTheme", Icon = "@drawable/popcorn")]
+    [Activity (Label = "The Movie Hub", Theme = "@style/MyTheme", Icon = "@drawable/popcorn")]
     public class MainActivity : FragmentActivity
     {        
         public static MovieService MovieService { get; set; }

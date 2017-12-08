@@ -49,6 +49,7 @@
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/marilyn_monroe.png
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/R.cs.flag
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/uploadflags.txt
+<<<<<<< HEAD
 C:/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.dll.config
 C:/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.dll
 C:/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.pdb
@@ -113,6 +114,8 @@ C:/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/assets/MovieSea
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xxxhdpi/popcorn.png
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/splash.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/splashscreen.png
+=======
+>>>>>>> 5b97d5d4647b1070b4a435a869e27964a4917eb9
 obj/Debug/linksrc/DM.MovieApi.dll.mdb
 obj/Debug/linksrc/MovieSearch.Android.pdb
 obj/Debug/linksrc/MovieSearch.pdb

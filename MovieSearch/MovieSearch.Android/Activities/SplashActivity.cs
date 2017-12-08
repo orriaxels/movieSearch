@@ -13,17 +13,12 @@ using MovieSearch.Services;
 
 namespace MovieSearch.Droid.Activities
 {
-    [Activity(Label = "SplashActivity", MainLauncher = true, Icon = "@drawable/popcorn", Theme = "@style/MyTheme.Splash")]
+    [Activity(Label = "The Movie Hub", MainLauncher = true, Icon = "@drawable/popcorn", Theme = "@style/MyTheme.Splash")]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            //SetContentView(Resource.Layout.Splash);
-
-            //ImageView image = FindViewById<ImageView>(Resource.Id.imageView1);
-            //image.SetImageResource(Resource.Drawable.movieIcon);
 
             MainActivity.MovieService = new MovieService();
 
@@ -32,9 +27,7 @@ namespace MovieSearch.Droid.Activities
                 StartActivity(typeof(MainActivity));
                 this.Finish();
             });
-            //this.StartActivity(typeof(MainActivity));
-            //this.Finish();
-            // Create your application here
+
         }
     }
 }

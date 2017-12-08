@@ -34,7 +34,6 @@ namespace MovieSearch.Droid.Activities
 
         }
 
-
         public override Java.Lang.Object GetItem(int position)
         {
             return position;
@@ -114,7 +113,6 @@ namespace MovieSearch.Droid.Activities
             }
 
             NotifyDataSetChanged();
-
         }
 
         //Fill in cound here, currently 0
