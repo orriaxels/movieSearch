@@ -1,56 +1,3 @@
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.dll.config
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.pdb
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/com.companyname.MovieSearch.apk
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/com.companyname.MovieSearch-Signed.apk
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Glide.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Newtonsoft.Json.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Animated.Vector.Drawable.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Annotations.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Compat.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Core.UI.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Core.Utils.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Design.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Fragment.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Media.Compat.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Transition.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.v4.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.v7.RecyclerView.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Xamarin.Android.Support.Vector.Drawable.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/DM.MovieApi.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.pdb
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.dll.mdb
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/Newtonsoft.Json.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/DM.MovieApi.pdb
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/DM.MovieApi.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/MovieSearch.Android.csprojResolveAssemblyReference.cache
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/MovieSearch.Android.csproj.CoreCompileInputs.cache
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/MovieSearch.Android.dll
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/MovieSearch.Android.pdb
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/bin/com.companyname.MovieSearch.apk
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/movielistitem.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/bttdmkgivoi0ffip1spuzi2oqg6.jpg
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/moviedetail.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/moviesearch.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/toolbar.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/styles.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/theme.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/favorite.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/main.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/strings.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/icon.png
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-mdpi/icon.png
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xhdpi/icon.png
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xxhdpi/icon.png
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xxxhdpi/icon.png
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/color.xml
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/marilyn_monroe.png
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/R.cs.flag
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/uploadflags.txt
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.csprojResolveAssemblyReference.cache
-C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.csproj.CoreCompileInputs.cache
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll.config
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.dll
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.Android.pdb
@@ -77,6 +24,8 @@ C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\MovieSearch.pdb
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\Newtonsoft.Json.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.pdb
 C:\movieSearch\MovieSearch\MovieSearch.Android\bin\Debug\DM.MovieApi.xml
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.csprojResolveAssemblyReference.cache
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.csproj.CoreCompileInputs.cache
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.dll
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\MovieSearch.Android.pdb
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\android\bin\com.companyname.MovieSearch.apk
@@ -87,6 +36,14 @@ C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\toolbar.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\styles.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\theme.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\favorite.xml
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\movieicon.png
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\popcorn.png
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-mdpi\popcorn.png
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-xhdpi\popcorn.png
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-xxhdpi\popcorn.png
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-xxxhdpi\popcorn.png
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\splash.xml
+C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\splashscreen.png
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\layout\main.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\values\strings.xml
 C:\movieSearch\MovieSearch\MovieSearch.Android\obj\Debug\res\drawable-hdpi\icon.png

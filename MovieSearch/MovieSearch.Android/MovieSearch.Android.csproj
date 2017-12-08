@@ -126,9 +126,19 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MovieSearch.axml" />
     <AndroidResource Include="Resources\layout\toolbar.xml" />
-    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\values\theme.xml" />
     <AndroidResource Include="Resources\layout\Favorite.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\movieIcon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\popcorn.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\popcorn.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\popcorn.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\popcorn.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\popcorn.png" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\splashScreen.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />

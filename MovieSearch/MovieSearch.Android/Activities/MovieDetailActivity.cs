@@ -144,25 +144,6 @@ namespace MovieSearch.Droid.Activities
                 }
                 genres.Text = fixGenreString(movieGenres);
             }
-
-            //var allActors = "";
-            //var allCharacters = "";
-            //if (_movie.actors != null)
-            //{
-            //    for (int i = 0; i < _movie.actors.Count; i++)
-            //    {
-            //        if (i == _movie.actors.Count - 1)
-            //        {
-            //            allActors += _movie.actors[i];
-            //            allCharacters += "- " +_movie.characters[i];
-            //        }
-            //        else
-            //        {
-            //            allActors += _movie.actors[i] + "\n";
-            //            allCharacters += "- " +_movie.characters[i] + "\n";
-            //        }
-            //    }
-            //}
         }
 
         private string fixGenreString(string str)
