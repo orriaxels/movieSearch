@@ -105,6 +105,14 @@ C:/movieSearch/MovieSearch/MovieSearch.Android/bin/Debug/MovieSearch.Android.dll
 C:/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/assets/DM.MovieApi.dll.mdb
 C:/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/assets/MovieSearch.Android.dll.mdb
 C:/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/assets/MovieSearch.dll.mdb
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/movieicon.png
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/popcorn.png
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-mdpi/popcorn.png
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xhdpi/popcorn.png
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xxhdpi/popcorn.png
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-xxxhdpi/popcorn.png
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/splash.xml
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/splashscreen.png
 obj/Debug/linksrc/DM.MovieApi.dll.mdb
 obj/Debug/linksrc/MovieSearch.Android.pdb
 obj/Debug/linksrc/MovieSearch.pdb

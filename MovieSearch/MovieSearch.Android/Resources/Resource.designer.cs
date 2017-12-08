@@ -2095,26 +2095,26 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02006b
-			public const int avd_hide_password_1 = 2130837611;
+			// aapt resource value: 0x7f02006e
+			public const int avd_hide_password_1 = 2130837614;
 			
-			// aapt resource value: 0x7f02006c
-			public const int avd_hide_password_2 = 2130837612;
+			// aapt resource value: 0x7f02006f
+			public const int avd_hide_password_2 = 2130837615;
 			
-			// aapt resource value: 0x7f02006d
-			public const int avd_hide_password_3 = 2130837613;
+			// aapt resource value: 0x7f020070
+			public const int avd_hide_password_3 = 2130837616;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02006e
-			public const int avd_show_password_1 = 2130837614;
+			// aapt resource value: 0x7f020071
+			public const int avd_show_password_1 = 2130837617;
 			
-			// aapt resource value: 0x7f02006f
-			public const int avd_show_password_2 = 2130837615;
+			// aapt resource value: 0x7f020072
+			public const int avd_show_password_2 = 2130837618;
 			
-			// aapt resource value: 0x7f020070
-			public const int avd_show_password_3 = 2130837616;
+			// aapt resource value: 0x7f020073
+			public const int avd_show_password_3 = 2130837619;
 			
 			// aapt resource value: 0x7f020055
 			public const int btTdmkgIvOi0FFip1sPuZI2oQG6 = 2130837589;
@@ -2144,43 +2144,52 @@ namespace MovieSearch.Droid
 			public const int marilyn_monroe = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int navigation_empty_icon = 2130837598;
+			public const int movieIcon = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int notification_action_background = 2130837599;
+			public const int navigation_empty_icon = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_bg = 2130837600;
+			public const int notification_action_background = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_bg_low = 2130837601;
+			public const int notification_bg = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_bg_low_normal = 2130837602;
+			public const int notification_bg_low = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_bg_low_pressed = 2130837603;
+			public const int notification_bg_low_normal = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notification_bg_normal = 2130837604;
+			public const int notification_bg_low_pressed = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int notification_bg_normal_pressed = 2130837605;
+			public const int notification_bg_normal = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int notification_icon_background = 2130837606;
-			
-			// aapt resource value: 0x7f020069
-			public const int notification_template_icon_bg = 2130837609;
-			
-			// aapt resource value: 0x7f02006a
-			public const int notification_template_icon_low_bg = 2130837610;
+			public const int notification_bg_normal_pressed = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int notification_tile_bg = 2130837607;
+			public const int notification_icon_background = 2130837607;
+			
+			// aapt resource value: 0x7f02006c
+			public const int notification_template_icon_bg = 2130837612;
+			
+			// aapt resource value: 0x7f02006d
+			public const int notification_template_icon_low_bg = 2130837613;
 			
 			// aapt resource value: 0x7f020068
-			public const int notify_panel_notification_icon_bg = 2130837608;
+			public const int notification_tile_bg = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int notify_panel_notification_icon_bg = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int popcorn = 2130837610;
+			
+			// aapt resource value: 0x7f02006b
+			public const int splashScreen = 2130837611;
 			
 			static Drawable()
 			{
@@ -2420,6 +2429,9 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f070046
 			public const int image = 2131165254;
 			
+			// aapt resource value: 0x7f0700bc
+			public const int imageView1 = 2131165372;
+			
 			// aapt resource value: 0x7f0700b2
 			public const int info = 2131165362;
 			
@@ -2456,8 +2468,8 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f070083
 			public const int main_content = 2131165315;
 			
-			// aapt resource value: 0x7f0700bd
-			public const int masked = 2131165373;
+			// aapt resource value: 0x7f0700be
+			public const int masked = 2131165374;
 			
 			// aapt resource value: 0x7f0700ab
 			public const int media_actions = 2131165355;
@@ -2747,8 +2759,8 @@ namespace MovieSearch.Droid
 			// aapt resource value: 0x7f070085
 			public const int viewpager = 2131165317;
 			
-			// aapt resource value: 0x7f0700bc
-			public const int visible = 2131165372;
+			// aapt resource value: 0x7f0700bd
+			public const int visible = 2131165373;
 			
 			// aapt resource value: 0x7f070027
 			public const int withText = 2131165223;
@@ -3011,10 +3023,13 @@ namespace MovieSearch.Droid
 			public const int select_dialog_singlechoice_material = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int support_simple_spinner_dropdown_item = 2130903104;
+			public const int Splash = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int toolbar = 2130903105;
+			public const int support_simple_spinner_dropdown_item = 2130903105;
+			
+			// aapt resource value: 0x7f030042
+			public const int toolbar = 2130903106;
 			
 			static Layout()
 			{
