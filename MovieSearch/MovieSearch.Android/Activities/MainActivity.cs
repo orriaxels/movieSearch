@@ -22,8 +22,6 @@ namespace MovieSearch.Droid.Activities
     public class MainActivity : FragmentActivity
     {        
         public static MovieService MovieService { get; set; }
-         
-        //private SpinnerLoader _spinner;
            
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -32,10 +30,13 @@ namespace MovieSearch.Droid.Activities
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
+            var movieSearchFrag = new MovieSearchFragment(MovieService);
+            var favoriteFrag = new FavoriteFragment(MovieService);
+
             var fragments = new Fragment[]
             {
-                new MovieSearchFragment(MovieService),
-                new FavoriteFragment(MovieService),
+                movieSearchFrag,
+                favoriteFrag
             };
 
             var titles = CharSequence.ArrayFromStringArray(new[] { "Search", "Favorite" });
@@ -45,6 +46,18 @@ namespace MovieSearch.Droid.Activities
 
             var tabLayout = this.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
             tabLayout.SetupWithViewPager(viewPager);
+
+            tabLayout.TabSelected += async (sender, args) =>
+            {
+                if(args.Tab.Position == 1)
+                {
+                    await favoriteFrag.GetFavoriteMovies();
+                }
+                //if(args.Tab.Position == 0)
+                //{
+                //    favoriteFrag.ClearFavoriteMovieList();
+                //}
+            };
 
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
             this.SetActionBar(toolbar);

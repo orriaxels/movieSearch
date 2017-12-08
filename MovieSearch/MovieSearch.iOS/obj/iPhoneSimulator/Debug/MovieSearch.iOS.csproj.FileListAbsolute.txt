@@ -53,7 +53,6 @@ C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch
 C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\DM.MovieApi.dll
 C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
 C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch.pdb
-C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\MovieSearch.dll.mdb
 C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\DM.MovieApi.pdb
 C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\DM.MovieApi.xml
 C:\movieSearch\MovieSearch\MovieSearch.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.xml
