@@ -112,15 +112,6 @@
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:textSize="14dp" />
-            <TextView
-                android:text="/10"
-                android:layout_below="@id/movieGenres"
-                android:layout_toRightOf="@id/movieRating"
-                android:fontFamily="default"
-                android:layout_marginTop="8.0dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1" />
         </RelativeLayout>
         <RelativeLayout
             android:minWidth="25px"
@@ -146,84 +137,29 @@
                 android:textColor="#fffafafa"
                 android:layout_marginLeft="5.0dp"
                 android:textStyle="normal" />
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="120dp"
-                android:id="@+id/profile"
-                android:layout_below="@id/cast"
-                android:layout_marginTop="5.0dp"
-                android:outlineProvider="none"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="120dp"
-                android:id="@+id/profile2"
-                android:layout_below="@id/cast"
-                android:layout_toRightOf="@id/profile"
-                android:layout_marginTop="5.0dp"
-                android:outlineProvider="none"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="120dp"
-                android:id="@+id/profile3"
-                android:layout_toRightOf="@id/profile2"
-                android:layout_marginTop="5.0dp"
-                android:outlineProvider="none"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_below="@id/cast" />
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="120dp"
-                android:id="@+id/profile4"
-                android:layout_toRightOf="@id/profile3"
-                android:layout_marginTop="5.0dp"
-                android:outlineProvider="none"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5.0dp"
-                android:layout_below="@id/cast" />
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="120dp"
-                android:id="@+id/profile5"
-                android:layout_toRightOf="@id/profile4"
-                android:layout_marginTop="5.0dp"
-                android:outlineProvider="none"
-                android:layout_marginLeft="5.0dp"
-                android:layout_marginRight="5.0dp"
-                android:layout_below="@id/cast" />
-            <TextView
-                android:text="Actor - "
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/profile"
-                android:id="@+id/actors"
-                android:fontFamily="default"
-                android:textSize="16dp"
-                android:textColor="#fffafafa"
-                android:layout_marginLeft="5.0dp"
-                android:layout_marginTop="5.0dp"
-                android:textStyle="bold" />
-            <TextView
-                android:text="Character"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/profile"
-                android:id="@+id/characters"
-                android:layout_toRightOf="@id/actors"
-                android:fontFamily="default"
-                android:textSize="16dp"
-                android:textColor="@android:color/darker_gray"
-                android:layout_marginTop="5.0dp"
-                android:textStyle="normal" />
+                android:id="@+id/hsv"
+                android:layout_below="@id/cast">
+                <RelativeLayout
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/rl3"
+                    android:layout_below="@id/cast"
+                    android:paddingStart="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@color/gray"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp" />
+            </HorizontalScrollView>
             <TextView
                 android:text="Director"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/actors"
+                android:layout_below="@id/hsv"
                 android:fontFamily="default"
                 android:textSize="12dp"
                 android:textColor="#fffafafa"
@@ -266,18 +202,5 @@
                 android:layout_marginLeft="5.0dp"
                 android:layout_marginRight="5.0dp" />
         </RelativeLayout>
-        <RelativeLayout
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/rl2"
-            android:id="@+id/rl3"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:paddingStart="5dp"
-            android:paddingRight="5dp"
-            android:background="@color/gray"
-            android:layout_marginBottom="10dp" />
     </RelativeLayout>
 </ScrollView>

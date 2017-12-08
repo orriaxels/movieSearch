@@ -53,7 +53,7 @@ namespace MovieSearch.Droid.Activities
             {
                 view = this._context.LayoutInflater.Inflate(Resource.Layout.MovieListItem, null);
             }
-                
+            
             var movie = this._movieDetails[position];
             var rating = movie.voteAverage * 10;           
             view.FindViewById<TextView>(Resource.Id.title).Text = movie.title;

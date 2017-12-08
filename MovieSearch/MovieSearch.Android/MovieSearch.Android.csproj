@@ -121,7 +121,6 @@
     <AndroidResource Include="Resources\layout\MovieListItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable-hdpi\btTdmkgIvOi0FFip1sPuZI2oQG6.jpg" />
     <AndroidResource Include="Resources\layout\MovieDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

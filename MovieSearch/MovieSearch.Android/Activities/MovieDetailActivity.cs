@@ -13,6 +13,9 @@ using MovieSearch.Model;
 using MovieSearch.Services;
 using Newtonsoft.Json;
 using Com.Bumptech.Glide;
+using Android.Content.Res;
+using static Android.Resource;
+using Android.Support.V4.Content;
 
 namespace MovieSearch.Droid.Activities
 {
@@ -27,9 +30,9 @@ namespace MovieSearch.Droid.Activities
         private MovieService _api;
 
         protected override void OnCreate(Bundle savedInstanceState)
-        {            
+        {
             base.OnCreate(savedInstanceState);
-         
+
             var jsonString = this.Intent.GetStringExtra("movieDetail");
             this._movie = JsonConvert.DeserializeObject<MovieDetails>(jsonString);
 
@@ -43,8 +46,6 @@ namespace MovieSearch.Droid.Activities
             var runtime = this.FindViewById<TextView>(Resource.Id.runtime);
             var director = this.FindViewById<TextView>(Resource.Id.director);
             var description = this.FindViewById<TextView>(Resource.Id.description);
-            var actors = this.FindViewById<TextView>(Resource.Id.actors);
-            var characters = this.FindViewById<TextView>(Resource.Id.characters);
             var writers = this.FindViewById<TextView>(Resource.Id.writer);
             var movieRating = this.FindViewById<TextView>(Resource.Id.movieRating);
             this.FindViewById<RatingBar>(Resource.Id.ratings).Progress = (int)rating;
@@ -59,15 +60,58 @@ namespace MovieSearch.Droid.Activities
             if (_movie.imageUrl != "" || _movie.imageUrl != null)
             {
                 Glide.With(this).Load(ImageUrl + _movie.imageUrl).Into(_imageView);
-            }           
+            }
+            var color = new Android.Graphics.Color(ContextCompat.GetColor(this, Resource.Color.primary_material_light));
 
-            for (int i = 0; i < persons.Count; i++)
+
+            for (int i = 0; i < persons.Count && i < 7; i++)
             {
-                var profileImage = (ImageView)this.FindViewById<ImageView>(Resource.Id.profile + i);
+
+                RelativeLayout layoutBase = FindViewById<RelativeLayout>(Resource.Id.rl3);
+                var imageView = new ImageView(this) { Id = 7000 + i };                               
+                var param = new RelativeLayout.LayoutParams(195, 390);               
+                param.SetMargins(5, 0, 5, 0);
+                if (i > 0)
+                    param.AddRule(LayoutRules.RightOf, imageView.Id - 1);
+
                 if (persons[i].posterPath != "" || persons[i].posterPath != null)
                 {
-                    Glide.With(this).Load(ImageUrl + persons[i].posterPath).Into(profileImage);
-                }                
+                    Glide.With(this).Load(ImageUrl + persons[i].posterPath).Into(imageView);
+                }
+                layoutBase.AddView(imageView, param);
+
+
+                // Getting the actor name
+                var actorName = new TextView(this) { Id = 8000 + i, Text = _movie.actors[i], TextSize = 10 };
+                actorName.SetMaxWidth(195);
+                actorName.SetSingleLine(true);
+                actorName.SetTextColor(color);
+                actorName.SetPadding(8, 0, 8, 0);
+
+                param = new RelativeLayout.LayoutParams(195, ViewGroup.LayoutParams.WrapContent);
+                param.SetMargins(5, 0, 5, 0);                
+                param.AddRule(LayoutRules.Below, imageView.Id);
+                if (i > 0)
+                {
+                    param.AddRule(LayoutRules.RightOf, imageView.Id - 1);
+                }
+                layoutBase.AddView(actorName, param);
+
+
+                // Getting the character name
+                var characterName = new TextView(this) { Id = 9000 + i, Text = _movie.characters[i], TextSize = 8 };
+                characterName.SetMaxWidth(195);
+                characterName.SetSingleLine(true);
+                characterName.SetPadding(8, 0, 8, 0);
+
+                param = new RelativeLayout.LayoutParams(195, ViewGroup.LayoutParams.WrapContent);
+                param.SetMargins(5, 0, 5, 0);
+                param.AddRule(LayoutRules.Below, actorName.Id);
+                if (i > 0)
+                {
+                    param.AddRule(LayoutRules.RightOf, imageView.Id - 1);
+                }
+                layoutBase.AddView(characterName, param);
             }
 
             var allWriters = "";
@@ -101,26 +145,24 @@ namespace MovieSearch.Droid.Activities
                 genres.Text = fixGenreString(movieGenres);
             }
 
-            var allActors = "";
-            var allCharacters = "";
-            if (_movie.actors != null)
-            {
-                for (int i = 0; i < _movie.actors.Count; i++)
-                {
-                    if (i == _movie.actors.Count - 1)
-                    {
-                        allActors += _movie.actors[i];
-                        allCharacters += "- " +_movie.characters[i];
-                    }
-                    else
-                    {
-                        allActors += _movie.actors[i] + "\n";
-                        allCharacters += "- " +_movie.characters[i] + "\n";
-                    }
-                }
-            }
-            actors.Text = allActors;
-            characters.Text = allCharacters;
+            //var allActors = "";
+            //var allCharacters = "";
+            //if (_movie.actors != null)
+            //{
+            //    for (int i = 0; i < _movie.actors.Count; i++)
+            //    {
+            //        if (i == _movie.actors.Count - 1)
+            //        {
+            //            allActors += _movie.actors[i];
+            //            allCharacters += "- " +_movie.characters[i];
+            //        }
+            //        else
+            //        {
+            //            allActors += _movie.actors[i] + "\n";
+            //            allCharacters += "- " +_movie.characters[i] + "\n";
+            //        }
+            //    }
+            //}
         }
 
         private string fixGenreString(string str)

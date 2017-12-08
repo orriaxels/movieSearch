@@ -34,7 +34,7 @@ namespace MovieSearch.Droid.Activities
             var movieSearchText = rootView.FindViewById<EditText>(Resource.Id.movieTitleInputField);
             var movieSearchbutton = rootView.FindViewById<Button>(Resource.Id.getMovieButton);
 
-            movieSearchText.Text = "Terminator";
+            movieSearchText.Text = "Thor";
 
             movieSearchbutton.Click += async (object sender, EventArgs e) =>
             {

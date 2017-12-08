@@ -84,7 +84,7 @@ namespace MovieSearch.Services
 
             if(cast.Item != null)
             {
-                for (int i = 0; i < cast.Item.CastMembers.Count && i < 5; i++)
+                for (int i = 0; i < cast.Item.CastMembers.Count && i < 7; i++)
                 {
                     movie.actors.Add(cast.Item.CastMembers[i].Name);
                     movie.characters.Add(cast.Item.CastMembers[i].Character);
