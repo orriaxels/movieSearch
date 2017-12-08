@@ -37,10 +37,7 @@ namespace MovieSearch.Droid.Activities
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-            var rootView = inflater.Inflate(Resource.Layout.Favorite, container, false);
-
-            //return base.OnCreateView(inflater, container, savedInstanceState);
+            var rootView = inflater.Inflate(Resource.Layout.Favorite, container, false);        
             this._listView = rootView.FindViewById<ListView>(Resource.Id.listView1);
 
             this._listView.ItemClick += async (sender, args) =>
@@ -57,7 +54,6 @@ namespace MovieSearch.Droid.Activities
 
                 this.StartActivity(intent);
 
-                this._spinner.setSpinnerMessage("Enjoy!");
                 this._spinner.hide();
             };
 
@@ -75,7 +71,6 @@ namespace MovieSearch.Droid.Activities
 
             this._movieList = await _api.getTopRatedMovies();
             this._listView.Adapter = new MovieListAdapter(this.Activity, this._movieList, this._api);
-            this._spinner.setSpinnerMessage("Enjoy!");
             this._spinner.hide();
         }
 

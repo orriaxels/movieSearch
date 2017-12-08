@@ -59,9 +59,12 @@ namespace MovieSearch.Droid.Activities
             view.FindViewById<TextView>(Resource.Id.title).Text = movie.title;
             view.FindViewById<TextView>(Resource.Id.year).Text = "(" + movie.releaseDate.Year.ToString() + ")";
             view.FindViewById<RatingBar>(Resource.Id.ratings).Progress = (int)rating;
+            var movieRating = view.FindViewById<TextView>(Resource.Id.movieRating);
             this._imageView = (ImageView)view.FindViewById<ImageView>(Resource.Id.poster);
 
-            if(movie.imageUrl != "" || movie.imageUrl != null)
+            movieRating.Text = movie.voteAverage.ToString();
+
+            if (movie.imageUrl != "" || movie.imageUrl != null)
             {
                 Glide.With(this._context).Load(ImageUrl + movie.imageUrl).Into(_imageView);    
             }
