@@ -47,7 +47,7 @@ namespace MovieSearch.Droid.Activities
         public override void OnAttachedToWindow()
         {
             base.OnAttachedToWindow();
-            Window.SetTitle("Results for \"" + searchText +"\"");
+            Window.SetTitle(searchText);
         }
     }
 }

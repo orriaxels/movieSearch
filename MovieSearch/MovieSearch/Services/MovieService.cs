@@ -159,8 +159,6 @@ namespace MovieSearch.Services
             ApiSearchResponse<MovieInfo> response = await _api.GetTopRatedAsync();
             List<MovieDetails> movies = new List<MovieDetails>();
 
-            Debug.WriteLine("Inside get top rated");
-
             if(response.Results == null)
             {
                 return movies;

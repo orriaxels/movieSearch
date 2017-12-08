@@ -1,22 +1,23 @@
 ﻿<Properties StartupConfiguration="{E95A0D9D-DE52-47B1-A565-6062954E1812}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieSearch/MovieSearch.Android/Activities/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MainActivity.cs" Line="57" Column="18" />
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListActivity.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MainActivity.cs" Line="56" Column="40" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListActivity.cs" Line="44" Column="29" />
       <File FileName="MovieSearch/MovieSearch.Android/Resources/values/styles.xml" Line="14" Column="13" />
       <File FileName="MovieSearch/MovieSearch.Android/Resources/values/theme.xml" Line="3" Column="1" />
       <File FileName="MovieSearch/MovieSearch.Android/Activities/TabsFragmentPagerAdapter.cs" Line="17" Column="39" />
       <File FileName="MovieSearch/MovieSearch.Android/Activities/SplashActivity.cs" Line="23" Column="25" />
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieSearchFragment.cs" Line="41" Column="1" />
-      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListAdapter.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieSearchFragment.cs" Line="50" Column="17" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieListAdapter.cs" Line="27" Column="100" />
       <File FileName="MovieSearch/MovieSearch.Android/Activities/MovieDetailActivity.cs" Line="1" Column="1" />
       <File FileName="MovieSearch/MovieSearch.Android/Resources/values/color.xml" Line="1" Column="1" />
-      <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="1" Column="1" />
+      <File FileName="MovieSearch/MovieSearch/Services/MovieService.cs" Line="160" Column="66" />
       <File FileName="MovieSearch/MovieSearch/Model/Person.cs" Line="9" Column="6" />
       <File FileName="MovieSearch/MovieSearch/Model/MovieDetails.cs" Line="3" Column="34" />
+      <File FileName="MovieSearch/MovieSearch.Android/Activities/FavoriteFragment.cs" Line="56" Column="89" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android PreferredExecutionTarget="Android.LGH8504b32dbb1" />
+  <MonoDevelop.Ide.ItemProperties.MovieSearch.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.LGH8504b32dbb1" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

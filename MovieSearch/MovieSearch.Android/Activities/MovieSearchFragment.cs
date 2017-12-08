@@ -47,7 +47,7 @@ namespace MovieSearch.Droid.Activities
                 await _movieService.GetMovieByTitle(movieSearchText.Text);
                 var intent = new Intent(this.Context, typeof(MovieListActivity));
                 intent.PutExtra("movieList", JsonConvert.SerializeObject(_movieService.GetMovies()));
-                intent.PutExtra("searchText", movieSearchText.Text);
+                intent.PutExtra("searchText", "Results for \"" + movieSearchText.Text + "\"");
 
                 this._spinner.setSpinnerMessage("Enjoy!");
                 this._spinner.hide();
