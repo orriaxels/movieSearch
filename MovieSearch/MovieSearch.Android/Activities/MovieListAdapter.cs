@@ -72,8 +72,6 @@ namespace MovieSearch.Droid.Activities
             {
                 for (int i = 0; i < movie.actors.Count; i++)
                 {
-                    Console.WriteLine("===========!!!!!!!!==========");
-                    Console.WriteLine(movie.actors[i]);
                     if(i < 2)
                     {
                         allActors += movie.actors[i] + " - " + movie.characters[i] + "\n";
@@ -86,15 +84,6 @@ namespace MovieSearch.Droid.Activities
                     {
                         break;
                     }
-
-                    //if (i == movie.actors.Count - 1)
-                    //{
-                    //    allActors += movie.actors[i] + " - " + movie.characters[i];
-                    //}
-                    //else
-                    //{
-                    //    allActors += movie.actors[i] + " - " + movie.characters[i] + "\n";
-                    //}
                 }
             }
 

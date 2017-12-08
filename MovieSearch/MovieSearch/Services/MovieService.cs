@@ -65,6 +65,18 @@ namespace MovieSearch.Services
 
             return _movies;
         }
+        
+        public async Task GetCastMembers(MovieDetails movie)
+        {
+            for(int i = 0; i < movie.person.Count; i++)
+            {
+                ApiQueryResponse<DM.MovieApi.MovieDb.People.Person> castDetail = await _pApi.FindByIdAsync(movie.person[i].id);
+                if (castDetail.Item != null)
+                {
+                    movie.person[i].posterPath = castDetail.Item.ProfilePath;
+                }
+            }
+        }
 
         public async Task GetCreditList(MovieDetails movie)
         {
@@ -74,22 +86,14 @@ namespace MovieSearch.Services
             {
                 for (int i = 0; i < cast.Item.CastMembers.Count && i < 5; i++)
                 {
-                    ApiQueryResponse<DM.MovieApi.MovieDb.People.Person> castDetail = await _pApi.FindByIdAsync(cast.Item.CastMembers[i].PersonId);
-
-                    if(castDetail.Item != null)
-                    {
-                        movie.person.Add(new Model.Person
-                        {
-                            name = cast.Item.CastMembers[i].Name,
-                            posterPath = castDetail.Item.ProfilePath
-                        });
-
-                        Debug.WriteLine(castDetail.Item.ProfilePath);
-                    }
-
-                    //var posterPath = castDetail.Item.CastRoles[i].PosterPath;
                     movie.actors.Add(cast.Item.CastMembers[i].Name);
                     movie.characters.Add(cast.Item.CastMembers[i].Character);
+
+                    movie.person.Add(new Model.Person
+                    {
+                        id = cast.Item.CastMembers[i].PersonId,
+                        name = cast.Item.CastMembers[i].Name
+                    });
                 }
             }
 
@@ -147,7 +151,6 @@ namespace MovieSearch.Services
                     movie.genres.Add(movieInfo.Item.Genres[i].ToString());
                 }   
             }
-
             return movie;
         }
 
