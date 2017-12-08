@@ -13,7 +13,7 @@ using Android.InputMethodServices;
 
 namespace MovieSearch.Droid.Activities
 {
-    [Activity(Label = "Movie search",Theme = "@style/MyTheme")]
+    [Activity(Label = "Movie search", Theme = "@style/MyTheme")]
     public class MovieSearchFragment : Fragment
     {
         private MovieService _movieService;
@@ -33,8 +33,6 @@ namespace MovieSearch.Droid.Activities
             // and attach an event to it
             var movieSearchText = rootView.FindViewById<EditText>(Resource.Id.movieTitleInputField);
             var movieSearchbutton = rootView.FindViewById<Button>(Resource.Id.getMovieButton);
-
-            movieSearchText.Text = "Thor";
 
             movieSearchbutton.Click += async (object sender, EventArgs e) =>
             {
