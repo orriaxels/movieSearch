@@ -57,7 +57,7 @@ namespace MovieSearch.Droid.Activities
 
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
             this.SetActionBar(toolbar);
-            this.ActionBar.Title = "Movie App";
+            this.ActionBar.Title = "The Movie Hub";
 		}
 	}
 }
