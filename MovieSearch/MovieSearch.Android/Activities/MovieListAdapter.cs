@@ -72,14 +72,29 @@ namespace MovieSearch.Droid.Activities
             {
                 for (int i = 0; i < movie.actors.Count; i++)
                 {
-                    if (i == movie.actors.Count - 1)
+                    Console.WriteLine("===========!!!!!!!!==========");
+                    Console.WriteLine(movie.actors[i]);
+                    if(i < 2)
+                    {
+                        allActors += movie.actors[i] + " - " + movie.characters[i] + "\n";
+                    }
+                    else if(i == 2)
                     {
                         allActors += movie.actors[i] + " - " + movie.characters[i];
                     }
                     else
                     {
-                        allActors += movie.actors[i] + " - " + movie.characters[i] + "\n";
+                        break;
                     }
+
+                    //if (i == movie.actors.Count - 1)
+                    //{
+                    //    allActors += movie.actors[i] + " - " + movie.characters[i];
+                    //}
+                    //else
+                    //{
+                    //    allActors += movie.actors[i] + " - " + movie.characters[i] + "\n";
+                    //}
                 }
             }
 
