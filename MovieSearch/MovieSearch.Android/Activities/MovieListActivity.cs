@@ -41,7 +41,7 @@ namespace MovieSearch.Droid.Activities
                 this.StartActivity(intent);
             };
 
-            this.ListAdapter = new MovieListAdapter(this, this._movieList, this._api);
+            this.ListAdapter = new MovieListAdapter(this, this._movieList, this._api);           
         }
 
         public override void OnAttachedToWindow()
