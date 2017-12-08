@@ -35,7 +35,7 @@ namespace MovieSearch.Droid.Activities
             var fragments = new Fragment[]
             {
                 new MovieSearchFragment(MovieService),
-                new FavoriteFragment(),
+                new FavoriteFragment(MovieService),
             };
 
             var titles = CharSequence.ArrayFromStringArray(new[] { "Search", "Favorite" });
