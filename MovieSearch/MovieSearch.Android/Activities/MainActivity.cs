@@ -32,10 +32,13 @@ namespace MovieSearch.Droid.Activities
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
+            var movieSearchFrag = new MovieSearchFragment(MovieService);
+            var favoriteFrag = new FavoriteFragment(MovieService);
+
             var fragments = new Fragment[]
             {
-                new MovieSearchFragment(MovieService),
-                new FavoriteFragment(MovieService),
+                movieSearchFrag,
+                favoriteFrag
             };
 
             var titles = CharSequence.ArrayFromStringArray(new[] { "Search", "Favorite" });
@@ -45,6 +48,14 @@ namespace MovieSearch.Droid.Activities
 
             var tabLayout = this.FindViewById<TabLayout>(Resource.Id.sliding_tabs);
             tabLayout.SetupWithViewPager(viewPager);
+
+            tabLayout.TabSelected += (sender, args) =>
+            {
+                if(args.Tab.Position == 1)
+                {
+                    
+                }
+            };
 
             var toolbar = this.FindViewById<Toolbar>(Resource.Id.toolbar);
             this.SetActionBar(toolbar);
