@@ -92,6 +92,7 @@ C:/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/assets/MovieSea
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/toolbar.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/styles.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/theme.xml
+/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/favorite.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/main.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/values/strings.xml
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/icon.png
@@ -103,7 +104,8 @@ C:/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/android/assets/MovieSea
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/drawable-hdpi/marilyn_monroe.png
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/R.cs.flag
 /Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/uploadflags.txt
-/Users/haraldurshoshan/Dropbox/HR/School/5. Semester/mapp/movieSearch/MovieSearch/MovieSearch.Android/obj/Debug/res/layout/favorite.xml
+bin/Debug/Mono.Android.pdb
 obj/Debug/linksrc/DM.MovieApi.dll.mdb
 obj/Debug/linksrc/MovieSearch.Android.pdb
+obj/Debug/linksrc/Mono.Android.pdb
 obj/Debug/linksrc/MovieSearch.pdb

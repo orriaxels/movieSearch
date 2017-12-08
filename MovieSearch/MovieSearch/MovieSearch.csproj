@@ -36,6 +36,7 @@
     <Compile Include="Model\MovieDetails.cs" />
     <Compile Include="Model\SingleMovieDetail.cs" />
     <Compile Include="Services\MovieService.cs" />
+    <Compile Include="Model\Person.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

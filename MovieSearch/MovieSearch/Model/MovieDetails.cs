@@ -15,6 +15,7 @@ namespace MovieSearch.Model
         public List<String> characters { get; set; }
         public String director { get; set; }
         public List<String> writers { get; set; }
+        public List<Person> person { get; set; }
         public String posterFilePath { get; set; }
         public String description { get; set; }
         public double voteAverage { get; set; }

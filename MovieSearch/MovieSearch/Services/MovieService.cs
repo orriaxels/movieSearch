@@ -7,6 +7,7 @@ using DM.MovieApi.MovieDb.Movies;
 using DM.MovieApi.ApiResponse;
 using System.Threading.Tasks;
 using MovieSearch.Model;
+using DM.MovieApi.MovieDb.People;
 
 namespace MovieSearch.Services
 {
@@ -16,12 +17,14 @@ namespace MovieSearch.Services
         public string apiUrl = "https://api.themoviedb.org/3/";
 
         private IApiMovieRequest _api;
+        private IApiPeopleRequest _pApi;
         private List<MovieDetails> _movies;
 
         public MovieService()
         {
             MovieDbFactory.RegisterSettings(apiKey, apiUrl);
             _api = MovieDbFactory.Create<IApiMovieRequest>().Value;
+            _pApi = MovieDbFactory.Create<IApiPeopleRequest>().Value;
             _movies = new List<MovieDetails>();
         }
 
@@ -54,7 +57,8 @@ namespace MovieSearch.Services
                         writers = new List<String>(),
                         genres = new List<String>(),
                         actors = new List<String>(),
-                        characters = new List<String>()
+                        characters = new List<String>(),
+                        person = new List<Model.Person>()
                     });
                 }
             }
@@ -68,8 +72,22 @@ namespace MovieSearch.Services
 
             if(cast.Item != null)
             {
-                for (int i = 0; i < cast.Item.CastMembers.Count && i < 3; i++)
+                for (int i = 0; i < cast.Item.CastMembers.Count && i < 5; i++)
                 {
+                    ApiQueryResponse<DM.MovieApi.MovieDb.People.Person> castDetail = await _pApi.FindByIdAsync(cast.Item.CastMembers[i].PersonId);
+
+                    if(castDetail.Item != null)
+                    {
+                        movie.person.Add(new Model.Person
+                        {
+                            name = cast.Item.CastMembers[i].Name,
+                            posterPath = castDetail.Item.ProfilePath
+                        });
+
+                        Debug.WriteLine(castDetail.Item.ProfilePath);
+                    }
+
+                    //var posterPath = castDetail.Item.CastRoles[i].PosterPath;
                     movie.actors.Add(cast.Item.CastMembers[i].Name);
                     movie.characters.Add(cast.Item.CastMembers[i].Character);
                 }
@@ -163,7 +181,8 @@ namespace MovieSearch.Services
                         writers = new List<String>(),
                         genres = new List<String>(),
                         actors = new List<String>(),
-                        characters = new List<String>()
+                        characters = new List<String>(),
+                        person = new List<Model.Person>()
                     });
                 }
             }
